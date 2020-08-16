@@ -7,3 +7,12 @@ C:\Users\bhartman\Documents\Lendings\Messages\obj\Debug\netstandard2.0\Messages.
 C:\Users\bhartman\Documents\Lendings\Messages\obj\Debug\netstandard2.0\Messages.csproj.CoreCompileInputs.cache
 C:\Users\bhartman\Documents\Lendings\Messages\obj\Debug\netstandard2.0\Messages.dll
 C:\Users\bhartman\Documents\Lendings\Messages\obj\Debug\netstandard2.0\Messages.pdb
+C:\Users\bhartman\Documents\LendingProject\Messages\bin\Debug\netstandard2.0\Messages.deps.json
+C:\Users\bhartman\Documents\LendingProject\Messages\bin\Debug\netstandard2.0\Messages.dll
+C:\Users\bhartman\Documents\LendingProject\Messages\bin\Debug\netstandard2.0\Messages.pdb
+C:\Users\bhartman\Documents\LendingProject\Messages\obj\Debug\netstandard2.0\Messages.csprojAssemblyReference.cache
+C:\Users\bhartman\Documents\LendingProject\Messages\obj\Debug\netstandard2.0\Messages.AssemblyInfoInputs.cache
+C:\Users\bhartman\Documents\LendingProject\Messages\obj\Debug\netstandard2.0\Messages.AssemblyInfo.cs
+C:\Users\bhartman\Documents\LendingProject\Messages\obj\Debug\netstandard2.0\Messages.csproj.CoreCompileInputs.cache
+C:\Users\bhartman\Documents\LendingProject\Messages\obj\Debug\netstandard2.0\Messages.dll
+C:\Users\bhartman\Documents\LendingProject\Messages\obj\Debug\netstandard2.0\Messages.pdb

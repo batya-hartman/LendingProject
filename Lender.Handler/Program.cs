@@ -7,6 +7,7 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Messages.Command;
 
 namespace Lender.Handler
 {
@@ -58,11 +59,17 @@ namespace Lender.Handler
 
             var endpointInstance = await Endpoint.Start(endpointConfiguration)
                 .ConfigureAwait(false);
-
+      
             Console.WriteLine("Press Enter to exit.");
+            CreateNewLender newLender = new CreateNewLender()
+            {
+                Name = "yy",
+                PathToExcelFile = "C:\\Book1.xlsx"
+            };
+            await endpointInstance.SendLocal(newLender).ConfigureAwait(false);
             Console.ReadLine();
-
-            await endpointInstance.Stop()
+           
+                await endpointInstance.Stop()
                 .ConfigureAwait(false);
         }
     }

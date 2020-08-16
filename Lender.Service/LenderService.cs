@@ -11,7 +11,7 @@ namespace Lender.Service
 {
     public class LenderService : ILenderService
     {
-        private readonly Dictionary<string, Func<Expression, Expression, BinaryExpression>> OperotorsDictionary = new Dictionary<string, Func<Expression, Expression, BinaryExpression>>();
+        private static readonly Dictionary<string, Func<Expression, Expression, BinaryExpression>> OperotorsDictionary = new Dictionary<string, Func<Expression, Expression, BinaryExpression>>();
         private readonly ILenderRepository _LenderRepository;
         public LenderService(ILenderRepository LenderRepository)
         {
@@ -34,17 +34,18 @@ namespace Lender.Service
         public async Task<BinaryExpression> BuildLenderExpression(Guid lenderId)
         {
             var lender = await _LenderRepository.GetLenderAsync(lenderId);
-           var  holeExpression = GenarateExpressionFromRules(lender.RulesList);
+            var holeExpression = GenarateExpressionFromRules(lender.RulesList);
             return holeExpression;
             //Trying trying = new Trying(50, 8000, 1200, "employee");
             //bool pass = TryExpression(holeExpression, trying);
             //return Task.CompletedTask;
         }
 
-        public Task<bool> AddLender(Models.Lender Lender)
+        public Task<bool> AddLender(Models.Lender lender)
         {
-            using (var stream = File.Open(Lender.PathToExcelFile, FileMode.Open, FileAccess.Read))
+            using (var stream = File.Open(lender.PathToExcelFile, FileMode.Open, FileAccess.Read))
             {
+                lender.RulesList = new List<Rule>();
                 System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
                 using (var reader = ExcelReaderFactory.CreateReader(stream))
                 {
@@ -59,11 +60,11 @@ namespace Lender.Service
                             Operand = dataTable.Rows[i][2].ToString(),
                             KindOperator = dataTable.Rows[i][3].ToString()
                         };
-                       Lender.RulesList.Add(rule);
+                        lender.RulesList.Add(rule);
                     }
                 }
             }
-           return  _LenderRepository.AddLenderAsync(Lender);
+            return _LenderRepository.AddLenderAsync(lender);
         }
         private BinaryExpression GenarateExpressionFromRules(List<Rule> rules, int index = 0, BinaryExpression expression = null)
         {
@@ -90,38 +91,39 @@ namespace Lender.Service
                 return OperotorsDictionary[rules[index].KindOperator](expression, GenarateExpressionFromRules(rules, ++index, expression));
             }
         }
-        private bool TryExpression(BinaryExpression expression, Trying obj)
-        {
-            try
-            {
-                var factorial = BinaryExpression.Lambda<Func<Trying>>(expression, new ParameterExpression[] { });
-                Expression<Func<int, bool>> lambda1 =
-            Expression.Lambda<Func<int, bool>>(
-                expression,
-                new ParameterExpression[] { });
-                var x = lambda1.Compile()(5);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-            return true;
-        }
-    }
-    public class Trying
-    {
-        public Trying(int age, int salary, int creditRating, string state)
-        {
-            Age = age;
-            Salary = salary;
-            CreditRating = creditRating;
-            State = state;
-        }
+        //    private bool TryExpression(BinaryExpression expression, Trying obj)
+        //    {
+        //        try
+        //        {
+        //            var factorial = BinaryExpression.Lambda<Func<Trying>>(expression, new ParameterExpression[] { });
+        //            Expression<Func<int, bool>> lambda1 =
+        //        Expression.Lambda<Func<int, bool>>(
+        //            expression,
+        //            new ParameterExpression[] { });
+        //            var x = lambda1.Compile()(5);
+        //        }
+        //        catch (Exception e)
+        //        {
+        //            Console.WriteLine(e.Message);
+        //        }
+        //        return true;
+        //    }
+        //}
+        //public class Trying
+        //{
+        //    public Trying(int age, int salary, int creditRating, string state)
+        //    {
+        //        Age = age;
+        //        Salary = salary;
+        //        CreditRating = creditRating;
+        //        State = state;
+        //    }
 
-        public int Age { get; set; }
-        public int Salary { get; set; }
-        public int CreditRating { get; set; }
-        public string State { get; set; }
+        //    public int Age { get; set; }
+        //    public int Salary { get; set; }
+        //    public int CreditRating { get; set; }
+        //    public string State { get; set; }
+        //}
     }
 }
 

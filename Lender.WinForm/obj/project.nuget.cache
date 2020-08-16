@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "36QiQfqYr8KbHyAvi5lmYhnhurOOdk1559W5irh3QK5xwG+z5MATKu8ZCGPinsZbGclJGixHlRGds1ZW5NG6Dw==",
+  "dgSpecHash": "Gsk5HLZcvpg94d9BFXul7tfLO014kuoV1u4CjB3qcLZ39LbV64tTqmCY071J+qGgLIAEjFfhhPg/Xr2MPlSoqw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.WinForm\\Lender.WinForm.csproj",
+  "projectFilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.WinForm\\Lender.WinForm.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bhartman\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\bhartman\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",

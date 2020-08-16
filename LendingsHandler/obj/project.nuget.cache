@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QbqAIa8Do0UTREs57SFahxceTpN+WWGYW5Yc/LwPF/naGTLK8j0ox0e7U1f9TB7GAxGcrNo+Ukxb+SqO4fhjaw==",
+  "dgSpecHash": "lgU2KG9dCFbBQM4htcpYXP6IvexTgI63UJNQn5bSZCvVPIhdIMXH5v3yCXN5Lg9pBV9VTNFbWqr3GV5+ixwnPQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\LendingsHandler\\LendingsHandler.csproj",
+  "projectFilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\LendingsHandler\\LendingsHandler.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bhartman\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\bhartman\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

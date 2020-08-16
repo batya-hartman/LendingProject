@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bhartman\\Documents\\Lendings\\Messages\\Messages.csproj": {}
+    "C:\\Users\\bhartman\\Documents\\LendingProject\\Messages\\Messages.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bhartman\\Documents\\Lendings\\Messages\\Messages.csproj": {
+    "C:\\Users\\bhartman\\Documents\\LendingProject\\Messages\\Messages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bhartman\\Documents\\Lendings\\Messages\\Messages.csproj",
+        "projectUniqueName": "C:\\Users\\bhartman\\Documents\\LendingProject\\Messages\\Messages.csproj",
         "projectName": "Messages",
-        "projectPath": "C:\\Users\\bhartman\\Documents\\Lendings\\Messages\\Messages.csproj",
+        "projectPath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Messages\\Messages.csproj",
         "packagesPath": "C:\\Users\\bhartman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bhartman\\Documents\\Lendings\\Messages\\obj\\",
+        "outputPath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Messages\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bhartman\\AppData\\Roaming\\NuGet\\NuGet.Config",

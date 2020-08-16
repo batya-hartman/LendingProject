@@ -25,167 +25,167 @@
     "ErrorsThrownDuringScanning": false,
     "SkippedFiles": [
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Bcl.AsyncInterfaces.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Bcl.AsyncInterfaces.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Bcl.HashCode.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Bcl.HashCode.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.Design.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.Design.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.Relational.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.Relational.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.SqlServer.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.SqlServer.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Caching.Abstractions.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Caching.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Caching.Memory.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Caching.Memory.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Configuration.Abstractions.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Configuration.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Configuration.Binder.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Configuration.Binder.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Configuration.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Configuration.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.DependencyInjection.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.DependencyInjection.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Logging.Abstractions.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Logging.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Logging.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Logging.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Options.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Options.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Primitives.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Primitives.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.JsonWebTokens.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.JsonWebTokens.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.Logging.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.Logging.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.Protocols.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.Protocols.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.Tokens.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.Tokens.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Win32.SystemEvents.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Win32.SystemEvents.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Newtonsoft.Json.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Newtonsoft.Json.dll",
         "SkipReason": "File was explicitly excluded from scanning."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Collections.Immutable.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Collections.Immutable.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Configuration.ConfigurationManager.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Configuration.ConfigurationManager.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Data.SqlClient.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Data.SqlClient.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Diagnostics.DiagnosticSource.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Diagnostics.DiagnosticSource.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Drawing.Common.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Drawing.Common.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.IdentityModel.Tokens.Jwt.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.IdentityModel.Tokens.Jwt.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Reflection.Metadata.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Reflection.Metadata.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Runtime.Caching.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Runtime.Caching.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Security.Cryptography.Pkcs.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Security.Cryptography.Pkcs.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Security.Cryptography.ProtectedData.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Security.Cryptography.ProtectedData.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Security.Cryptography.Xml.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Security.Cryptography.Xml.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Security.Permissions.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Security.Permissions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Text.Encoding.CodePages.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Text.Encoding.CodePages.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Threading.Channels.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Threading.Channels.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Windows.Extensions.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Windows.Extensions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Lender.Handler.exe",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Lender.Handler.exe",
         "SkipReason": "File is not a .NET assembly."
       },
       {
@@ -193,7 +193,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Caching.Abstractions.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Caching.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -225,7 +225,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\runtimes\\win\\lib\\netcoreapp3.0\\Microsoft.Win32.SystemEvents.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\runtimes\\win\\lib\\netcoreapp3.0\\Microsoft.Win32.SystemEvents.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -233,31 +233,31 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Bcl.AsyncInterfaces.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Bcl.AsyncInterfaces.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.Logging.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.Logging.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Configuration.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Configuration.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Options.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Options.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Bcl.HashCode.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Bcl.HashCode.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.SqlServer.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.SqlServer.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -269,7 +269,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -277,7 +277,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Configuration.Abstractions.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Configuration.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -285,7 +285,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.Relational.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.Relational.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -293,19 +293,19 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.Design.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.EntityFrameworkCore.Design.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\runtimes\\win\\lib\\netcoreapp2.0\\System.Runtime.Caching.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\runtimes\\win\\lib\\netcoreapp2.0\\System.Runtime.Caching.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Caching.Memory.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Caching.Memory.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Configuration.Binder.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Configuration.Binder.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -317,11 +317,11 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.IdentityModel.Tokens.Jwt.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.IdentityModel.Tokens.Jwt.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -337,7 +337,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.DependencyInjection.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.DependencyInjection.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -345,15 +345,15 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Logging.Abstractions.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Logging.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Logging.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Logging.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Primitives.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.Extensions.Primitives.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -361,15 +361,15 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.JsonWebTokens.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.JsonWebTokens.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Newtonsoft.Json.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Newtonsoft.Json.dll",
         "SkipReason": "File was explicitly excluded from scanning."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -385,7 +385,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.Protocols.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.Protocols.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -397,39 +397,39 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.Tokens.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Microsoft.IdentityModel.Tokens.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Configuration.ConfigurationManager.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Configuration.ConfigurationManager.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Security.Cryptography.Xml.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Security.Cryptography.Xml.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\runtimes\\win\\lib\\netcoreapp2.1\\System.Data.SqlClient.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\runtimes\\win\\lib\\netcoreapp2.1\\System.Data.SqlClient.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Security.Permissions.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\System.Security.Permissions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\runtimes\\win\\lib\\netcoreapp3.0\\System.Security.Cryptography.Pkcs.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\runtimes\\win\\lib\\netcoreapp3.0\\System.Security.Cryptography.Pkcs.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\runtimes\\win\\lib\\netcoreapp3.0\\System.Drawing.Common.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\runtimes\\win\\lib\\netcoreapp3.0\\System.Drawing.Common.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\runtimes\\win\\lib\\netstandard2.0\\System.Security.Cryptography.ProtectedData.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\runtimes\\win\\lib\\netstandard2.0\\System.Security.Cryptography.ProtectedData.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\runtimes\\win\\lib\\netcoreapp3.0\\System.Windows.Extensions.dll",
+        "FilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\runtimes\\win\\lib\\netcoreapp3.0\\System.Windows.Extensions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -1863,7 +1863,7 @@
     }
   ],
   "Hosting": {
-    "HostId": "7fd42f7a-270f-d8e0-fbae-83ed09276e6d",
+    "HostId": "5a994379-104a-db61-2c02-62c3de9b4484",
     "HostDisplayName": "ILBHARTMANLT",
     "MachineName": "ILBHARTMANLT",
     "OSPlatform": 2,
@@ -1880,11 +1880,11 @@
       "MajorRevision": -1,
       "MinorRevision": -1
     },
-    "WorkingSet": 52883456,
+    "WorkingSet": 53985280,
     "SystemPageSize": 4096,
     "HostName": "ILBHARTMANLT",
     "UserName": "BHartman",
-    "PathToExe": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Lender.Handler.dll"
+    "PathToExe": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\bin\\Debug\\netcoreapp3.1\\Lender.Handler.dll"
   },
   "Licensing": {
     "RegisteredTo": "bt3232675@gmail.com",
@@ -1904,9 +1904,9 @@
     "MessageConventions": [
       "Modified NServiceBus Marker Interfaces"
     ],
-    "NumberOfMessagesFoundAtStartup": 0,
+    "NumberOfMessagesFoundAtStartup": 1,
     "Messages": [
-      
+      "Messages.Command.CreateNewLender"
     ]
   },
   "NServiceBus.Persistence.Sql.Outbox": {
@@ -1985,7 +1985,9 @@
     ],
     "ExternalHandlerRegistry": false,
     "MessageHandlers": {
-      
+      "Messages.Command.CreateNewLender": [
+        "Lender.Handler.LenderHandler"
+      ]
     }
   },
   "Recoverability": {

@@ -11,7 +11,7 @@ namespace Lender.WinForm
         {
             InitializeComponent();
         }
-        private async void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             openFileDialog2.Filter = "excel files only | *.xlsx";
             openFileDialog2.ShowDialog();
@@ -20,9 +20,10 @@ namespace Lender.WinForm
                 Name = textBox1.Text,
                 PathToExcelFile = openFileDialog2.FileName
             };
-          await Program.AddNSB();
+       //    Program.AddNSB();
+            
 
-           //Lender.Handler.LenderHandler lenderHandler = new Handler.tryyy();
+           //Lender.Handler.LenderHandler lenderHandler = new Handler.();
            // lenderHandler.AddLenderAsync(lender);
         }
     }

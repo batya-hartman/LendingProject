@@ -7,3 +7,12 @@ C:\Users\bhartman\Documents\Lendings\Lender.Service\obj\Debug\netstandard2.0\Len
 C:\Users\bhartman\Documents\Lendings\Lender.Service\obj\Debug\netstandard2.0\Lender.Service.csproj.CoreCompileInputs.cache
 C:\Users\bhartman\Documents\Lendings\Lender.Service\obj\Debug\netstandard2.0\Lender.Service.dll
 C:\Users\bhartman\Documents\Lendings\Lender.Service\obj\Debug\netstandard2.0\Lender.Service.pdb
+C:\Users\bhartman\Documents\LendingProject\Lender.Service\bin\Debug\netstandard2.0\Lender.Service.deps.json
+C:\Users\bhartman\Documents\LendingProject\Lender.Service\bin\Debug\netstandard2.0\Lender.Service.dll
+C:\Users\bhartman\Documents\LendingProject\Lender.Service\bin\Debug\netstandard2.0\Lender.Service.pdb
+C:\Users\bhartman\Documents\LendingProject\Lender.Service\obj\Debug\netstandard2.0\Lender.Service.csprojAssemblyReference.cache
+C:\Users\bhartman\Documents\LendingProject\Lender.Service\obj\Debug\netstandard2.0\Lender.Service.AssemblyInfoInputs.cache
+C:\Users\bhartman\Documents\LendingProject\Lender.Service\obj\Debug\netstandard2.0\Lender.Service.AssemblyInfo.cs
+C:\Users\bhartman\Documents\LendingProject\Lender.Service\obj\Debug\netstandard2.0\Lender.Service.csproj.CoreCompileInputs.cache
+C:\Users\bhartman\Documents\LendingProject\Lender.Service\obj\Debug\netstandard2.0\Lender.Service.dll
+C:\Users\bhartman\Documents\LendingProject\Lender.Service\obj\Debug\netstandard2.0\Lender.Service.pdb

@@ -1,4 +1,5 @@
 ﻿using Lender.Service;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Threading.Tasks;
 
@@ -22,9 +23,9 @@ namespace Lender.Data
             _lenderContext.Lenders.Add(lender);
             return await _lenderContext.SaveChangesAsync() > 0;
         }
-        public Task<Lender.Service.Models.Lender> GetLenderAsync(Guid lenderId)
+        public Task<Service.Models.Lender> GetLenderAsync(Guid lenderId)
         {
-            throw new NotImplementedException();
+           return _lenderContext.Lenders.FirstOrDefaultAsync(l => l.LenderId == lenderId);
         }
     }
 }

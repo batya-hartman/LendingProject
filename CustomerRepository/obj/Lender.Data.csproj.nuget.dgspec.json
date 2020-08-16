@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bhartman\\Documents\\Lendings\\CustomerRepository\\Lender.Data.csproj": {}
+    "C:\\Users\\bhartman\\Documents\\LendingProject\\CustomerRepository\\Lender.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bhartman\\Documents\\Lendings\\CustomerRepository\\Lender.Data.csproj": {
+    "C:\\Users\\bhartman\\Documents\\LendingProject\\CustomerRepository\\Lender.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bhartman\\Documents\\Lendings\\CustomerRepository\\Lender.Data.csproj",
+        "projectUniqueName": "C:\\Users\\bhartman\\Documents\\LendingProject\\CustomerRepository\\Lender.Data.csproj",
         "projectName": "Lender.Data",
-        "projectPath": "C:\\Users\\bhartman\\Documents\\Lendings\\CustomerRepository\\Lender.Data.csproj",
+        "projectPath": "C:\\Users\\bhartman\\Documents\\LendingProject\\CustomerRepository\\Lender.Data.csproj",
         "packagesPath": "C:\\Users\\bhartman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bhartman\\Documents\\Lendings\\CustomerRepository\\obj\\",
+        "outputPath": "C:\\Users\\bhartman\\Documents\\LendingProject\\CustomerRepository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bhartman\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Service\\Lender.Service.csproj": {
-                "projectPath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Service\\Lender.Service.csproj"
+              "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Service\\Lender.Service.csproj": {
+                "projectPath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Service\\Lender.Service.csproj"
               }
             }
           }
@@ -75,14 +75,14 @@
         }
       }
     },
-    "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Service\\Lender.Service.csproj": {
+    "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Service\\Lender.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Service\\Lender.Service.csproj",
+        "projectUniqueName": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Service\\Lender.Service.csproj",
         "projectName": "Lender.Service",
-        "projectPath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Service\\Lender.Service.csproj",
+        "projectPath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Service\\Lender.Service.csproj",
         "packagesPath": "C:\\Users\\bhartman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Service\\obj\\",
+        "outputPath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bhartman\\AppData\\Roaming\\NuGet\\NuGet.Config",

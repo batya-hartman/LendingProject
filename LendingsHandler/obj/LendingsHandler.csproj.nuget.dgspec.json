@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bhartman\\Documents\\Lendings\\LendingsHandler\\LendingsHandler.csproj": {}
+    "C:\\Users\\bhartman\\Documents\\LendingProject\\LendingsHandler\\LendingsHandler.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bhartman\\Documents\\Lendings\\LendingsHandler\\LendingsHandler.csproj": {
+    "C:\\Users\\bhartman\\Documents\\LendingProject\\LendingsHandler\\LendingsHandler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bhartman\\Documents\\Lendings\\LendingsHandler\\LendingsHandler.csproj",
+        "projectUniqueName": "C:\\Users\\bhartman\\Documents\\LendingProject\\LendingsHandler\\LendingsHandler.csproj",
         "projectName": "LendingsHandler",
-        "projectPath": "C:\\Users\\bhartman\\Documents\\Lendings\\LendingsHandler\\LendingsHandler.csproj",
+        "projectPath": "C:\\Users\\bhartman\\Documents\\LendingProject\\LendingsHandler\\LendingsHandler.csproj",
         "packagesPath": "C:\\Users\\bhartman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bhartman\\Documents\\Lendings\\LendingsHandler\\obj\\",
+        "outputPath": "C:\\Users\\bhartman\\Documents\\LendingProject\\LendingsHandler\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bhartman\\AppData\\Roaming\\NuGet\\NuGet.Config",
