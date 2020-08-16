@@ -1,0 +1,50 @@
+﻿2020-08-16 16:12:42.458 INFO  Logging to 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-16 16:12:42.604 INFO  Auditing processed messages to 'audit'
+2020-08-16 16:12:42.688 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-16 16:12:43.051 INFO  Executing 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-16 16:12:50.520 INFO  Logging to 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-16 16:12:50.630 INFO  Auditing processed messages to 'audit'
+2020-08-16 16:12:50.705 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-16 16:12:51.059 INFO  Executing 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-16 16:23:53.871 INFO  Logging to 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-16 16:23:53.965 INFO  Auditing processed messages to 'audit'
+2020-08-16 16:23:54.043 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-16 16:23:54.329 INFO  Executing 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-16 16:27:02.675 INFO  Logging to 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-16 16:27:02.775 INFO  Auditing processed messages to 'audit'
+2020-08-16 16:27:02.850 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-16 16:27:03.161 INFO  Executing 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-16 16:35:30.689 INFO  Logging to 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-16 16:35:30.787 INFO  Auditing processed messages to 'audit'
+2020-08-16 16:35:30.875 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-16 16:35:31.273 INFO  Executing 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-16 16:36:01.589 INFO  Logging to 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-16 16:36:01.689 INFO  Auditing processed messages to 'audit'
+2020-08-16 16:36:01.769 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-16 16:36:02.122 INFO  Executing 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-16 16:38:48.435 INFO  Logging to 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-16 16:38:48.543 INFO  Auditing processed messages to 'audit'
+2020-08-16 16:38:48.628 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-16 16:38:48.964 INFO  Executing 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-16 16:43:36.428 INFO  Logging to 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-16 16:43:36.535 INFO  Auditing processed messages to 'audit'
+2020-08-16 16:43:36.618 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-16 16:43:36.943 INFO  Executing 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-16 16:45:44.477 INFO  Logging to 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-16 16:45:44.590 INFO  Auditing processed messages to 'audit'
+2020-08-16 16:45:44.700 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-16 16:45:45.148 INFO  Executing 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-16 16:46:40.348 INFO  Logging to 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-16 16:46:40.448 INFO  Auditing processed messages to 'audit'
+2020-08-16 16:46:40.526 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-16 16:46:40.956 INFO  Executing 'C:\Users\bhartman\Documents\Lendings\Lender.Handler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'

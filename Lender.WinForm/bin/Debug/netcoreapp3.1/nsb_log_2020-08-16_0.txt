@@ -1,0 +1,14 @@
+﻿2020-08-16 16:36:02.520 INFO  Logging to 'C:\Users\bhartman\Documents\Lendings\Lender.WinForm\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-16 16:36:02.661 INFO  Auditing processed messages to 'audit'
+2020-08-16 16:36:02.860 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-16 16:36:03.150 INFO  Executing 'C:\Users\bhartman\Documents\Lendings\Lender.WinForm\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-16 16:36:03.303 INFO  Initiating shutdown.
+2020-08-16 16:36:03.317 INFO  Shutdown complete.
+2020-08-16 16:46:45.811 INFO  Logging to 'C:\Users\bhartman\Documents\Lendings\Lender.WinForm\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-16 16:46:45.937 INFO  Auditing processed messages to 'audit'
+2020-08-16 16:46:45.984 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-16 16:46:46.303 INFO  Executing 'C:\Users\bhartman\Documents\Lendings\Lender.WinForm\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-16 16:46:46.451 INFO  Initiating shutdown.
+2020-08-16 16:46:46.467 INFO  Shutdown complete.

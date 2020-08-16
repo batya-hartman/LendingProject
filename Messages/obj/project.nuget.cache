@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "aBVU4MewZ9XIG4FF48/TwnM46fmw40rT6lmhnCYs9st0Gz7UxxV2OIK5Yn4IVPpchcVVowxvGz9hVBVtIb0yFw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Messages\\Messages.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bhartman\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\bhartman\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

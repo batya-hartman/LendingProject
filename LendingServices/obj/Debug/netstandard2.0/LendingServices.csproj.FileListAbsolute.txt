@@ -1,0 +1,9 @@
+C:\Users\bhartman\Documents\Lendings\LendingServices\bin\Debug\netstandard2.0\LendingServices.deps.json
+C:\Users\bhartman\Documents\Lendings\LendingServices\bin\Debug\netstandard2.0\LendingServices.dll
+C:\Users\bhartman\Documents\Lendings\LendingServices\bin\Debug\netstandard2.0\LendingServices.pdb
+C:\Users\bhartman\Documents\Lendings\LendingServices\obj\Debug\netstandard2.0\LendingServices.csprojAssemblyReference.cache
+C:\Users\bhartman\Documents\Lendings\LendingServices\obj\Debug\netstandard2.0\LendingServices.AssemblyInfoInputs.cache
+C:\Users\bhartman\Documents\Lendings\LendingServices\obj\Debug\netstandard2.0\LendingServices.AssemblyInfo.cs
+C:\Users\bhartman\Documents\Lendings\LendingServices\obj\Debug\netstandard2.0\LendingServices.csproj.CoreCompileInputs.cache
+C:\Users\bhartman\Documents\Lendings\LendingServices\obj\Debug\netstandard2.0\LendingServices.dll
+C:\Users\bhartman\Documents\Lendings\LendingServices\obj\Debug\netstandard2.0\LendingServices.pdb

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "BnvLo9ngl5wPZWr8EdboeH8xQKb5uIlhEMhZUNa/57/uVwU0bwbf1aPiz5nLX68whz0V9UgW0C3dwbnlNzLaUQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bhartman\\Documents\\Lendings\\Lender.Service\\Lender.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bhartman\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
+    "C:\\Users\\bhartman\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512",
+    "C:\\Users\\bhartman\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\bhartman\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\bhartman\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
+    "C:\\Users\\bhartman\\.nuget\\packages\\system.text.encoding.codepages\\4.7.1\\system.text.encoding.codepages.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,10 @@
+C:\Users\bhartman\Documents\Lendings\Lender.Data\bin\Debug\netstandard2.0\LendingsData.dll.config
+C:\Users\bhartman\Documents\Lendings\Lender.Data\bin\Debug\netstandard2.0\LendingsData.deps.json
+C:\Users\bhartman\Documents\Lendings\Lender.Data\bin\Debug\netstandard2.0\LendingsData.dll
+C:\Users\bhartman\Documents\Lendings\Lender.Data\bin\Debug\netstandard2.0\LendingsData.pdb
+C:\Users\bhartman\Documents\Lendings\Lender.Data\obj\Debug\netstandard2.0\LendingsData.csprojAssemblyReference.cache
+C:\Users\bhartman\Documents\Lendings\Lender.Data\obj\Debug\netstandard2.0\LendingsData.AssemblyInfoInputs.cache
+C:\Users\bhartman\Documents\Lendings\Lender.Data\obj\Debug\netstandard2.0\LendingsData.AssemblyInfo.cs
+C:\Users\bhartman\Documents\Lendings\Lender.Data\obj\Debug\netstandard2.0\LendingsData.dll
+C:\Users\bhartman\Documents\Lendings\Lender.Data\obj\Debug\netstandard2.0\LendingsData.pdb
+C:\Users\bhartman\Documents\Lendings\Lender.Data\obj\Debug\netstandard2.0\LendingsData.csproj.CoreCompileInputs.cache
