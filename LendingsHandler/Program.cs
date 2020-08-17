@@ -1,10 +1,15 @@
 ﻿using AutoMapper;
+using Lending.Services;
+using Lendings.Data;
 using Microsoft.Extensions.DependencyInjection;
 using NServiceBus;
 using System;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+
+
 
 namespace LendingsHandler
 {
@@ -17,7 +22,7 @@ namespace LendingsHandler
             var endpointConfiguration = new EndpointConfiguration("Lendings");
 
             endpointConfiguration.EnableOutbox();
-            var connection = ConfigurationManager.AppSettings["LendingsConnection"];
+            var connection = ConfigurationManager.AppSettings["LendingConnection"];
             var persistence = endpointConfiguration.UsePersistence<SqlPersistence>();
             var subscriptions = persistence.SubscriptionSettings();
             subscriptions.CacheFor(TimeSpan.FromMinutes(1));
@@ -40,21 +45,22 @@ namespace LendingsHandler
 
             var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());
 
-            // containerSettings.ServiceCollection.AddScoped<IOperationRepository, OperationRepository>();
-            //containerSettings.ServiceCollection.AddDbContext<AContext>(options =>
-            //            options.UseSqlServer(connection));
+             containerSettings.ServiceCollection.AddScoped<ILendingRepository, LendingRepository>();
+             containerSettings.ServiceCollection.AddScoped<ILendingService, LendingService>();
+            containerSettings.ServiceCollection.AddDbContext<LendingContext>(options =>
+                        options.UseSqlServer(connection));
 
             //var mappingConfig = new MapperConfiguration(mc =>
             //{
             //    mc.AddProfile(new MappingProfile());
             //});
-
-           // IMapper mapper = mappingConfig.CreateMapper();
-          //  containerSettings.ServiceCollection.AddSingleton(mapper);
+            
+            // IMapper mapper = mappingConfig.CreateMapper();
+            //  containerSettings.ServiceCollection.AddSingleton(mapper);
 
             var endpointInstance = await Endpoint.Start(endpointConfiguration)
                 .ConfigureAwait(false);
-
+            
             Console.WriteLine("Press Enter to exit.");
             Console.ReadLine();
 

@@ -1635,6 +1635,9 @@
         "dependencies": {
           "ExcelDataReader": "3.6.0",
           "ExcelDataReader.DataSet": "3.6.0",
+          "Messages": "1.0.0",
+          "NServiceBus": "7.4.0",
+          "System.ComponentModel.Annotations": "4.7.0",
           "System.Text.Encoding.CodePages": "4.7.1"
         },
         "compile": {

@@ -213,7 +213,11 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\bhartman\\Documents\\LendingProject\\Messages\\Messages.csproj": {
+                "projectPath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Messages\\Messages.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -238,6 +242,14 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "NServiceBus": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             },
             "System.Text.Encoding.CodePages": {
               "target": "Package",

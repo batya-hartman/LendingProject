@@ -14,15 +14,6 @@ namespace Lender.Handler
             _lenderService = ilender;
         }
 
-        public Task<bool> AddLenderAsync(Service.Models.Lender lender)
-        {
-            return _lenderService.AddLender(lender);
-        }
-        public Task<Lender.Service.Models.Lender> GetLenderAsync(Guid lenderId)
-        {
-            throw new NotImplementedException();
-        }
-
         public Task Handle(CreateNewLender message, IMessageHandlerContext context)
         {
             Service.Models.Lender lender = new Service.Models.Lender()
@@ -30,7 +21,7 @@ namespace Lender.Handler
                 Name = message.Name,
                 PathToExcelFile = message.PathToExcelFile
             };
-            return AddLenderAsync(lender);
+            return _lenderService.AddLender(lender);
         }
     }
 }

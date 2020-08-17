@@ -9,19 +9,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Messages", "Messages\Messag
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lender", "Lender", "{F400345A-B785-4BBC-8203-A30A53FD10B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LendingsData", "Lender.Data\LendingsData.csproj", "{788FD8E1-1B05-4DBA-8575-48382A77C497}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lendings.Data", "Lender.Data\Lendings.Data.csproj", "{788FD8E1-1B05-4DBA-8575-48382A77C497}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lending", "Lending", "{00670909-B736-45D2-B329-E760650A3F02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LendingsHandler", "LendingsHandler\LendingsHandler.csproj", "{AE4BAC66-CCDE-4078-89DF-6F3DACFDB947}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LendingsHandler", "LendingsHandler\LendingsHandler.csproj", "{AE4BAC66-CCDE-4078-89DF-6F3DACFDB947}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LendingServices", "LendingServices\LendingServices.csproj", "{7DA18CE6-D95B-4DA9-83E7-ACD8BE6157AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lending.Services", "LendingServices\Lending.Services.csproj", "{7DA18CE6-D95B-4DA9-83E7-ACD8BE6157AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lender.Service", "Lender.Service\Lender.Service.csproj", "{A8571047-A1B2-4AA7-A017-B4A1CE638C25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lender.Service", "Lender.Service\Lender.Service.csproj", "{A8571047-A1B2-4AA7-A017-B4A1CE638C25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lender.Data", "CustomerRepository\Lender.Data.csproj", "{338063FD-606C-45A1-A7A5-4D9950644575}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lender.Data", "CustomerRepository\Lender.Data.csproj", "{338063FD-606C-45A1-A7A5-4D9950644575}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lender.Handler", "Lender.Handler\Lender.Handler.csproj", "{EC0C3EC9-A800-448B-88AC-7730890AD630}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lender.Handler", "Lender.Handler\Lender.Handler.csproj", "{EC0C3EC9-A800-448B-88AC-7730890AD630}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lender.Api", "Lender.Api\Lender.Api.csproj", "{A958170B-CEF8-4034-B1E0-F310E11701B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{EC0C3EC9-A800-448B-88AC-7730890AD630}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC0C3EC9-A800-448B-88AC-7730890AD630}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC0C3EC9-A800-448B-88AC-7730890AD630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A958170B-CEF8-4034-B1E0-F310E11701B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A958170B-CEF8-4034-B1E0-F310E11701B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A958170B-CEF8-4034-B1E0-F310E11701B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A958170B-CEF8-4034-B1E0-F310E11701B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +79,7 @@ Global
 		{A8571047-A1B2-4AA7-A017-B4A1CE638C25} = {F400345A-B785-4BBC-8203-A30A53FD10B3}
 		{338063FD-606C-45A1-A7A5-4D9950644575} = {F400345A-B785-4BBC-8203-A30A53FD10B3}
 		{EC0C3EC9-A800-448B-88AC-7730890AD630} = {F400345A-B785-4BBC-8203-A30A53FD10B3}
+		{A958170B-CEF8-4034-B1E0-F310E11701B6} = {F400345A-B785-4BBC-8203-A30A53FD10B3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0283A79-DD3A-428D-8AA6-D2D3645ED281}

@@ -22,3 +22,5 @@ C:\Users\bhartman\Documents\LendingProject\CustomerRepository\obj\Debug\netstand
 C:\Users\bhartman\Documents\LendingProject\CustomerRepository\obj\Debug\netstandard2.0\Lender.Data.csproj.CopyComplete
 C:\Users\bhartman\Documents\LendingProject\CustomerRepository\obj\Debug\netstandard2.0\Lender.Data.dll
 C:\Users\bhartman\Documents\LendingProject\CustomerRepository\obj\Debug\netstandard2.0\Lender.Data.pdb
+C:\Users\bhartman\Documents\LendingProject\CustomerRepository\bin\Debug\netstandard2.0\Messages.dll
+C:\Users\bhartman\Documents\LendingProject\CustomerRepository\bin\Debug\netstandard2.0\Messages.pdb

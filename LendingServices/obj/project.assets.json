@@ -185,9 +185,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bhartman\\Documents\\LendingProject\\LendingServices\\LendingServices.csproj",
-      "projectName": "LendingServices",
-      "projectPath": "C:\\Users\\bhartman\\Documents\\LendingProject\\LendingServices\\LendingServices.csproj",
+      "projectUniqueName": "C:\\Users\\bhartman\\Documents\\LendingProject\\LendingServices\\Lending.Services.csproj",
+      "projectName": "Lending.Services",
+      "projectPath": "C:\\Users\\bhartman\\Documents\\LendingProject\\LendingServices\\Lending.Services.csproj",
       "packagesPath": "C:\\Users\\bhartman\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\bhartman\\Documents\\LendingProject\\LendingServices\\obj\\",
       "projectStyle": "PackageReference",

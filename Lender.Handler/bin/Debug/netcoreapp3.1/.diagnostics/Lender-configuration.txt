@@ -20,6 +20,14 @@
       {
         "FullName": "NServiceBus.Extensions.DependencyInjection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c",
         "FileVersion": "1.0.1"
+      },
+      {
+        "FullName": "Lender.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "FileVersion": "1.0.0"
+      },
+      {
+        "FullName": "Lender.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "FileVersion": "1.0.0"
       }
     ],
     "ErrorsThrownDuringScanning": false,
@@ -1880,7 +1888,7 @@
       "MajorRevision": -1,
       "MinorRevision": -1
     },
-    "WorkingSet": 53985280,
+    "WorkingSet": 50761728,
     "SystemPageSize": 4096,
     "HostName": "ILBHARTMANLT",
     "UserName": "BHartman",

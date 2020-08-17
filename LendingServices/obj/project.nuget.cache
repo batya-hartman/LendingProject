@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "04CD+SgJDSd055lgchQ06LtcfNE0eetnu6Ka5RIjMmhkYObDau+4/tLqzwgn0etC0WQRW19fak6bj5wVcJ3VEw==",
+  "dgSpecHash": "9R9G+ig4Zs1p3l7LQGPHfX2+NC6g5mgDehgJHcxSN4+LBdWncpuonQkSl7hIDD4giCgk8XR4Zh2lV7p53E55Ew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\LendingServices\\LendingServices.csproj",
+  "projectFilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\LendingServices\\Lending.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bhartman\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\bhartman\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
