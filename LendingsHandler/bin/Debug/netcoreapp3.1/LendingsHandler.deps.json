@@ -1138,6 +1138,7 @@
       },
       "Lending.Services/1.0.0": {
         "dependencies": {
+          "Messages": "1.0.0",
           "NServiceBus": "7.4.0",
           "System.ComponentModel.Annotations": "4.7.0"
         },

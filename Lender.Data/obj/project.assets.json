@@ -465,6 +465,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Messages": "1.0.0",
           "NServiceBus": "7.4.0",
           "System.ComponentModel.Annotations": "4.7.0"
         },
@@ -473,6 +474,16 @@
         },
         "runtime": {
           "bin/placeholder/Lending.Services.dll": {}
+        }
+      },
+      "Messages/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Messages.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Messages.dll": {}
         }
       }
     }
@@ -1696,6 +1707,11 @@
       "type": "project",
       "path": "../LendingServices/Lending.Services.csproj",
       "msbuildProject": "../LendingServices/Lending.Services.csproj"
+    },
+    "Messages/1.0.0": {
+      "type": "project",
+      "path": "../Messages/Messages.csproj",
+      "msbuildProject": "../Messages/Messages.csproj"
     }
   },
   "projectFileDependencyGroups": {

@@ -24,7 +24,7 @@ namespace Lending.Api
             Host.CreateDefaultBuilder(args)
                 .UseNServiceBus(context =>
                 {
-                    var endpointConfiguration = new EndpointConfiguration("Lender.Api");
+                    var endpointConfiguration = new EndpointConfiguration("Lending.Api");
                     endpointConfiguration.EnableInstallers();
                     var outboxSettings = endpointConfiguration.EnableOutbox();
                     outboxSettings.KeepDeduplicationDataFor(TimeSpan.FromDays(6));

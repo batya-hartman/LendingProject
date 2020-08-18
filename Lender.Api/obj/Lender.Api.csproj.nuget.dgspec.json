@@ -122,10 +122,6 @@
               "target": "Package",
               "version": "[3.1.7, )"
             },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[3.1.4, )"
-            },
             "NServiceBus": {
               "target": "Package",
               "version": "[7.4.0, )"
@@ -141,10 +137,6 @@
             "NServiceBus.RabbitMQ": {
               "target": "Package",
               "version": "[6.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.2, )"
             }
           },
           "imports": [

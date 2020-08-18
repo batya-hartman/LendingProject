@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ERAiFG5ocBCFxmmaVukLaTlGac8cHo9ogTtXdpN9G71HKHbRZsksgXla0n0yoWlVvgyNipruZNrdxfCLSy7VKw==",
+  "dgSpecHash": "fuw9ENnm/4eBltLDBwoJkoQW2qSW6uFG/CYSJL7CBcDYAVelJa9hVGe0DsWgQM9MaUwDNIlfON4TyyVk56miqQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\Lender.Handler.csproj",
+  "projectFilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Handler\\Rules.Handler.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bhartman\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\bhartman\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",

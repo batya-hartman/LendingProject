@@ -47,7 +47,7 @@ namespace LendingsHandler
 
              containerSettings.ServiceCollection.AddScoped<ILendingRepository, LendingRepository>();
              containerSettings.ServiceCollection.AddScoped<ILendingService, LendingService>();
-            containerSettings.ServiceCollection.AddDbContext<LendingContext>(options =>
+             containerSettings.ServiceCollection.AddDbContext<LendingContext>(options =>
                         options.UseSqlServer(connection));
 
            

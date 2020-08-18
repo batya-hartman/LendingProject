@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+
+
 
 namespace Lending.Api
 {
@@ -16,12 +19,14 @@ namespace Lending.Api
         }
 
         public IConfiguration Configuration { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<ILendingService, LendingService>();
             services.AddScoped<ILendingRepository, LendingRepository>();
+            services.AddScoped<ISendLending, SendLending>();
+            services.AddDbContext<LendingContext>(options =>
+              options.UseSqlServer(
+                  Configuration.GetConnectionString("LendingConnection")));
             services.AddControllers();
         }
 

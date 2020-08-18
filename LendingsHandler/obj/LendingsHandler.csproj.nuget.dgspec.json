@@ -89,7 +89,11 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\bhartman\\Documents\\LendingProject\\Messages\\Messages.csproj": {
+                "projectPath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Messages\\Messages.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

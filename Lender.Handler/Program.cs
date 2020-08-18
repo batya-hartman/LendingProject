@@ -1,13 +1,11 @@
-﻿using AutoMapper;
-using Lender.Service;
+﻿using Lender.Service;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using NServiceBus;
 using System;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Messages.Command;
 
 namespace Lender.Handler
 {
@@ -49,28 +47,15 @@ namespace Lender.Handler
             containerSettings.ServiceCollection.AddDbContext<Data.LenderContext>(options =>
                         options.UseSqlServer(connection));
 
-            var mappingConfig = new MapperConfiguration(mc =>
-            {
-                mc.AddProfile(new MappingProfile());
-            });
-
-            IMapper mapper = mappingConfig.CreateMapper();
-            containerSettings.ServiceCollection.AddSingleton(mapper);
-
             var endpointInstance = await Endpoint.Start(endpointConfiguration)
                 .ConfigureAwait(false);
-      
+
             Console.WriteLine("Press Enter to exit.");
-            CreateNewLender newLender = new CreateNewLender()
-            {
-                Name = "yy",
-                PathToExcelFile = "C:\\Book1.xlsx"
-            };
-            await endpointInstance.SendLocal(newLender).ConfigureAwait(false);
+
             Console.ReadLine();
-           
-                await endpointInstance.Stop()
-                .ConfigureAwait(false);
+
+            await endpointInstance.Stop()
+            .ConfigureAwait(false);
         }
     }
 }

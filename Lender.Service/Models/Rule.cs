@@ -9,6 +9,6 @@ namespace Lender.Service.Models
         public string ComparisonOperator { get; set; }
         public string Operand { get; set; }
         public string LogicalOperator { get; set; }
-        public Type Type { get; set; }
+        //public Type Type { get; set; }
     }
 }

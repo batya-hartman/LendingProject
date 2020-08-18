@@ -2,6 +2,7 @@
 using Messages.Command;
 using NServiceBus;
 using NServiceBus.Logging;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace LendingsHandler
@@ -18,13 +19,32 @@ namespace LendingsHandler
         public Task Handle(LendingArrived message, IMessageHandlerContext context)
         {
             _log.Info("Lending arrived to LendindArrivedHandler");
-            var lending = new Lending.Services.Models.Lending()
+            var res= _lendingService.CheckLendingPassible(MapToLendingModel(message));
+            _log.Info($"Checked if the lending is ok, the result is {res.Result}");
+            return res;
+        }
+        private Lending.Services.Models.Lending MapToLendingModel(LendingArrived lending)
+        {
+            Lending.Services.Models.Lending lending1 = new Lending.Services.Models.Lending()
             {
-                LenderId = message.LenderId,
-        //        Parameters = message.Parameters,
-                PrincipalSignature = message.PrincipalSignature
+                LenderId = lending.LenderId,
+                PrincipalSignature = lending.PrincipalSignature,
+                Parameters = new Dictionary<string, object>()
             };
-            return _lendingService.CheckLendingPassible(lending);
+
+            foreach (var item in lending.BoolParameters)
+            {
+                lending1.Parameters.Add(item.Key, item.Value);
+            }
+            foreach (var item in lending.doubleParameters)
+            {
+                lending1.Parameters.Add(item.Key, item.Value);
+            }
+            foreach (var item in lending.StringParameters)
+            {
+                lending1.Parameters.Add(item.Key, item.Value);
+            }
+            return lending1;
         }
     }
 }
