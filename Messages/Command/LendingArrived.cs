@@ -7,10 +7,7 @@ namespace Messages.Command
     public  class LendingArrived
     {
         public Guid  LenderId { get; set; }
-        public Dictionary<string,MyObject > Parameters { get; set; }
-    }
-    public class MyObject:Object
-    {
-
+        public Dictionary<string,object > Parameters { get; set; }
+        public string PrincipalSignature { get; set; }
     }
 }

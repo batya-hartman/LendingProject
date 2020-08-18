@@ -1,19 +1,18 @@
 ﻿using Lending.Services.Models;
+using NServiceBus;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Lending.Services
 {
     public class LendingService : ILendingService
     {
-        private readonly Dictionary<string, Func<Expression, Expression, BinaryExpression>>
-            OperotorsDictionary = new Dictionary<string, Func<Expression, Expression, BinaryExpression>>();
         private readonly ILendingRepository _lendingRepository;
-
-        public LendingService(ILendingRepository ilendingrepository)
+        private readonly Dictionary<string, Func<Expression, Expression, BinaryExpression>>
+                  OperotorsDictionary = new Dictionary<string, Func<Expression, Expression, BinaryExpression>>();
+        public LendingService(ILendingRepository ilendingrepository, IMessageSession imessageSession)
         {
             _lendingRepository = ilendingrepository;
             if (OperotorsDictionary.Count == 0)
@@ -35,17 +34,21 @@ namespace Lending.Services
             OperotorsDictionary.Add("and", (a, b) => Expression.AndAlso(a, b));
             OperotorsDictionary.Add("or", (a, b) => Expression.OrElse(a, b));
         }
-        private async  Task<BinaryExpression> BuildLenderExpression(Guid lenderId, ParameterExpression parameters)
+        private async Task<BinaryExpression> BuildLenderExpression(Models.Lending lending, ParameterExpression parameters)
         {
-            Lender lender = await  _lendingRepository.GetLenderAsync(lenderId);
+            Lender lender = await _lendingRepository.GetLenderAsync(lending.LenderId);
             if (lender.Rules != null)
             {
-                var holeExpression = GenarateExpressionFromRules(lender.Rules,parameters);
+                if (!String.IsNullOrEmpty(lending.PrincipalSignature))
+                {
+                    lender.Rules.RemoveAll(rule => rule.Description == lending.PrincipalSignature);
+                }
+                var holeExpression = GenarateExpressionFromRules(lender.Rules, parameters);
                 return holeExpression;
             }
             return null;
         }
-        private BinaryExpression GenarateExpressionFromRules(List<Rule> rules,ParameterExpression parameters)
+        private BinaryExpression GenarateExpressionFromRules(List<Rule> rules, ParameterExpression parameters)
         {
             BinaryExpression expression;
             ConstantExpression operand;
@@ -72,23 +75,22 @@ namespace Lending.Services
             else
             {
                 rules.RemoveAt(0);
-                return OperotorsDictionary[rules[0].LogicalOperator](expression, GenarateExpressionFromRules(rules,parameters));
+                return OperotorsDictionary[rules[0].LogicalOperator](expression, GenarateExpressionFromRules(rules, parameters));
             }
         }
         public async Task CheckLendingPassible(Models.Lending lending)
         {
-            
-            var parameters = Expression.Parameter(typeof(Dictionary<string, object>), "parameters");
-          var expression = await BuildLenderExpression(lending.LenderId,parameters);
-            //var expr2 = Expression.GreaterThan(Expression.Property
-            //    (parameters, "Item", Expression.Constant("Age")), Expression.Constant(18));
 
+            var parameters = Expression.Parameter(typeof(Dictionary<string, object>), "parameters");
+            var expression = await BuildLenderExpression(lending, parameters);
             Expression<Func<Dictionary<string, object>, bool>> le = Expression.Lambda<Func<Dictionary<string, object>, bool>>(expression, parameters);
             Func<Dictionary<string, object>, bool> compiled = le.Compile();
             var temp = new Dictionary<string, object>();
-            temp.Add("age", 4);
-            temp.Add("salary", 52);
-            temp.Add("Credit Rating", 52);            
+            temp.Add("salary", 520000);
+            temp.Add("Credit Rating", 52000);
+            temp.Add("age", 67);
+            temp.Add("ggg", 5000002);
+            temp.Add("state", "employee");
             var res = compiled(temp);
         }
     }

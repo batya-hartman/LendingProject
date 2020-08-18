@@ -1,4 +1,6 @@
-﻿namespace Lender.Service.Models
+﻿using System;
+
+namespace Lender.Service.Models
 {
     public class Rule
     {
@@ -7,5 +9,6 @@
         public string ComparisonOperator { get; set; }
         public string Operand { get; set; }
         public string LogicalOperator { get; set; }
+        public Type Type { get; set; }
     }
 }

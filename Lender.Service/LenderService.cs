@@ -48,14 +48,19 @@ namespace Lender.Service
             return _LenderRepository.AddLenderAsync(lender);
         }
         public async Task<bool> CheckLendingPassible(Lending lending)
-        {//valid
-            LendingArrived lendingArrived = new LendingArrived()
+        {
+            if (lending.LenderId!=Guid.Empty && lending.Parameters.Count > 0)
             {
-                LenderId = lending.LenderId,
-             //   Parameters = lending.Parameters
-            };          
-            await _messageSession.Send(lendingArrived).ConfigureAwait(false);
-            return true;
+                LendingArrived lendingArrived = new LendingArrived()
+                {
+                    LenderId = lending.LenderId,
+            //        Parameters = lending.Parameters,
+                    PrincipalSignature = lending.PrincipalSignature
+                };
+                await _messageSession.Send(lendingArrived).ConfigureAwait(false);
+                return true;
+            }
+            return false;
         }
     }
 }

@@ -191,8 +191,3 @@ C:\Users\bhartman\Documents\LendingProject\Lender.Api\bin\Debug\netcoreapp3.1\ru
 C:\Users\bhartman\Documents\LendingProject\Lender.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\bhartman\Documents\LendingProject\Lender.Api\bin\Debug\netcoreapp3.1\Lender.Data.dll
 C:\Users\bhartman\Documents\LendingProject\Lender.Api\bin\Debug\netcoreapp3.1\Lender.Data.pdb
-C:\Users\bhartman\Documents\LendingProject\Lender.Api\bin\Debug\netcoreapp3.1\Lending.Services.dll
-C:\Users\bhartman\Documents\LendingProject\Lender.Api\bin\Debug\netcoreapp3.1\Lending.Services.pdb
-C:\Users\bhartman\Documents\LendingProject\Lender.Api\bin\Debug\netcoreapp3.1\Lendings.Data.dll
-C:\Users\bhartman\Documents\LendingProject\Lender.Api\bin\Debug\netcoreapp3.1\Lendings.Data.pdb
-C:\Users\bhartman\Documents\LendingProject\Lender.Api\bin\Debug\netcoreapp3.1\Lendings.Data.dll.config

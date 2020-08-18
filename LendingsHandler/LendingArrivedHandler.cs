@@ -21,7 +21,8 @@ namespace LendingsHandler
             var lending = new Lending.Services.Models.Lending()
             {
                 LenderId = message.LenderId,
-             //   Parameters = message.Parameters
+        //        Parameters = message.Parameters,
+                PrincipalSignature = message.PrincipalSignature
             };
             return _lendingService.CheckLendingPassible(lending);
         }

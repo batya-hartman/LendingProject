@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lender.WinForm", "Lender.WinForm\Lender.WinForm.csproj", "{4414A8EC-D1BF-4D6C-8D3D-388862606E01}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Messages", "Messages\Messages.csproj", "{7E8B9604-1E5C-4E8B-B9CE-CE414E406C28}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lender", "Lender", "{F400345A-B785-4BBC-8203-A30A53FD10B3}"
@@ -23,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lender.Data", "CustomerRepo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lender.Handler", "Lender.Handler\Lender.Handler.csproj", "{EC0C3EC9-A800-448B-88AC-7730890AD630}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lender.Api", "Lender.Api\Lender.Api.csproj", "{A958170B-CEF8-4034-B1E0-F310E11701B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lender.Api", "Lender.Api\Lender.Api.csproj", "{A958170B-CEF8-4034-B1E0-F310E11701B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lending.Api", "Lending.Api\Lending.Api.csproj", "{673923C7-9131-4446-997E-C8046DB83940}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +31,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4414A8EC-D1BF-4D6C-8D3D-388862606E01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4414A8EC-D1BF-4D6C-8D3D-388862606E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4414A8EC-D1BF-4D6C-8D3D-388862606E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4414A8EC-D1BF-4D6C-8D3D-388862606E01}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7E8B9604-1E5C-4E8B-B9CE-CE414E406C28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7E8B9604-1E5C-4E8B-B9CE-CE414E406C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E8B9604-1E5C-4E8B-B9CE-CE414E406C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -67,12 +63,15 @@ Global
 		{A958170B-CEF8-4034-B1E0-F310E11701B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A958170B-CEF8-4034-B1E0-F310E11701B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A958170B-CEF8-4034-B1E0-F310E11701B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{673923C7-9131-4446-997E-C8046DB83940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{673923C7-9131-4446-997E-C8046DB83940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{673923C7-9131-4446-997E-C8046DB83940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{673923C7-9131-4446-997E-C8046DB83940}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{4414A8EC-D1BF-4D6C-8D3D-388862606E01} = {F400345A-B785-4BBC-8203-A30A53FD10B3}
 		{788FD8E1-1B05-4DBA-8575-48382A77C497} = {00670909-B736-45D2-B329-E760650A3F02}
 		{AE4BAC66-CCDE-4078-89DF-6F3DACFDB947} = {00670909-B736-45D2-B329-E760650A3F02}
 		{7DA18CE6-D95B-4DA9-83E7-ACD8BE6157AD} = {00670909-B736-45D2-B329-E760650A3F02}
@@ -80,6 +79,7 @@ Global
 		{338063FD-606C-45A1-A7A5-4D9950644575} = {F400345A-B785-4BBC-8203-A30A53FD10B3}
 		{EC0C3EC9-A800-448B-88AC-7730890AD630} = {F400345A-B785-4BBC-8203-A30A53FD10B3}
 		{A958170B-CEF8-4034-B1E0-F310E11701B6} = {F400345A-B785-4BBC-8203-A30A53FD10B3}
+		{673923C7-9131-4446-997E-C8046DB83940} = {00670909-B736-45D2-B329-E760650A3F02}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0283A79-DD3A-428D-8AA6-D2D3645ED281}

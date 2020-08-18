@@ -1,0 +1,747 @@
+﻿2020-08-18 09:48:59.247 INFO  Logging to 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-18 09:50:39.553 INFO  Logging to 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-18 09:51:51.644 INFO  Logging to 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-18 09:51:51.903 INFO  Auditing processed messages to 'audit'
+2020-08-18 09:51:52.039 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-18 09:51:52.439 INFO  Executing 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-18 09:52:35.109 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:54:44.004 INFO  Logging to 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-18 09:54:44.393 INFO  Auditing processed messages to 'audit'
+2020-08-18 09:54:44.655 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-18 09:54:45.431 INFO  Executing 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-18 09:54:52.610 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:55:07.571 INFO  Immediate Retry is going to retry message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' because of an exception:
+System.ArgumentException: An item with the same key has already been added. Key: Credit Rating
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending) in C:\Users\bhartman\Documents\LendingProject\LendingServices\LendingService.cs:line 92
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:54:52
+	Handler failure time: 18/08/2020 6:55:07
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:55:07.618 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:55:07.765 INFO  Immediate Retry is going to retry message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' because of an exception:
+System.ArgumentException: An item with the same key has already been added. Key: Credit Rating
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending) in C:\Users\bhartman\Documents\LendingProject\LendingServices\LendingService.cs:line 92
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:55:07
+	Handler failure time: 18/08/2020 6:55:07
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:55:07.792 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:55:07.930 INFO  Immediate Retry is going to retry message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' because of an exception:
+System.ArgumentException: An item with the same key has already been added. Key: Credit Rating
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending) in C:\Users\bhartman\Documents\LendingProject\LendingServices\LendingService.cs:line 92
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:55:07
+	Handler failure time: 18/08/2020 6:55:07
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:55:07.954 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:55:08.084 INFO  Immediate Retry is going to retry message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' because of an exception:
+System.ArgumentException: An item with the same key has already been added. Key: Credit Rating
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending) in C:\Users\bhartman\Documents\LendingProject\LendingServices\LendingService.cs:line 92
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:55:07
+	Handler failure time: 18/08/2020 6:55:07
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:55:08.105 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:55:08.233 INFO  Immediate Retry is going to retry message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' because of an exception:
+System.ArgumentException: An item with the same key has already been added. Key: Credit Rating
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending) in C:\Users\bhartman\Documents\LendingProject\LendingServices\LendingService.cs:line 92
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:55:08
+	Handler failure time: 18/08/2020 6:55:08
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:55:08.243 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:55:08.389 WARN  Delayed Retry will reschedule message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' after a delay of 00:00:10 because of an exception:
+System.ArgumentException: An item with the same key has already been added. Key: Credit Rating
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending) in C:\Users\bhartman\Documents\LendingProject\LendingServices\LendingService.cs:line 92
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:55:08
+	Handler failure time: 18/08/2020 6:55:08
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:55:18.466 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:55:18.601 INFO  Immediate Retry is going to retry message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' because of an exception:
+System.ArgumentException: An item with the same key has already been added. Key: Credit Rating
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending) in C:\Users\bhartman\Documents\LendingProject\LendingServices\LendingService.cs:line 92
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:55:18
+	Handler failure time: 18/08/2020 6:55:18
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:55:18.617 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:55:18.741 INFO  Immediate Retry is going to retry message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' because of an exception:
+System.ArgumentException: An item with the same key has already been added. Key: Credit Rating
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending) in C:\Users\bhartman\Documents\LendingProject\LendingServices\LendingService.cs:line 92
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:55:18
+	Handler failure time: 18/08/2020 6:55:18
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:55:18.753 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:55:18.876 INFO  Immediate Retry is going to retry message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' because of an exception:
+System.ArgumentException: An item with the same key has already been added. Key: Credit Rating
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending) in C:\Users\bhartman\Documents\LendingProject\LendingServices\LendingService.cs:line 92
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:55:18
+	Handler failure time: 18/08/2020 6:55:18
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:55:18.887 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:55:19.015 INFO  Immediate Retry is going to retry message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' because of an exception:
+System.ArgumentException: An item with the same key has already been added. Key: Credit Rating
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending) in C:\Users\bhartman\Documents\LendingProject\LendingServices\LendingService.cs:line 92
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:55:18
+	Handler failure time: 18/08/2020 6:55:18
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:55:19.029 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:55:19.158 INFO  Immediate Retry is going to retry message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' because of an exception:
+System.ArgumentException: An item with the same key has already been added. Key: Credit Rating
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending) in C:\Users\bhartman\Documents\LendingProject\LendingServices\LendingService.cs:line 92
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:55:19
+	Handler failure time: 18/08/2020 6:55:19
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:55:19.169 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:55:19.326 WARN  Delayed Retry will reschedule message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' after a delay of 00:00:20 because of an exception:
+System.ArgumentException: An item with the same key has already been added. Key: Credit Rating
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending) in C:\Users\bhartman\Documents\LendingProject\LendingServices\LendingService.cs:line 92
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:55:19
+	Handler failure time: 18/08/2020 6:55:19
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:55:28.720 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:56:02.883 INFO  Immediate Retry is going to retry message 'e5a0d9e9-0368-443e-8d77-ac1b00721d55' because of an exception:
+System.ArgumentException: An item with the same key has already been added. Key: Credit Rating
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:55:28
+	Handler failure time: 18/08/2020 6:55:37
+	Message ID: e5a0d9e9-0368-443e-8d77-ac1b00721d55
+2020-08-18 09:56:02.890 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:56:02.925 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:56:34.740 INFO  Immediate Retry is going to retry message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' because of an exception:
+System.Collections.Generic.KeyNotFoundException: The given key 'age' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at lambda_method(Closure , Dictionary`2 )
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:56:02
+	Handler failure time: 18/08/2020 6:56:18
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:56:34.804 INFO  Immediate Retry is going to retry message 'e5a0d9e9-0368-443e-8d77-ac1b00721d55' because of an exception:
+System.Collections.Generic.KeyNotFoundException: The given key 'age' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at lambda_method(Closure , Dictionary`2 )
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:56:02
+	Handler failure time: 18/08/2020 6:56:32
+	Message ID: e5a0d9e9-0368-443e-8d77-ac1b00721d55
+2020-08-18 09:56:34.816 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:56:34.823 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:56:39.635 INFO  Immediate Retry is going to retry message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' because of an exception:
+System.Collections.Generic.KeyNotFoundException: The given key 'age' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at lambda_method(Closure , Dictionary`2 )
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:56:34
+	Handler failure time: 18/08/2020 6:56:37
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:56:39.699 INFO  Immediate Retry is going to retry message 'e5a0d9e9-0368-443e-8d77-ac1b00721d55' because of an exception:
+System.Collections.Generic.KeyNotFoundException: The given key 'age' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at lambda_method(Closure , Dictionary`2 )
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:56:34
+	Handler failure time: 18/08/2020 6:56:39
+	Message ID: e5a0d9e9-0368-443e-8d77-ac1b00721d55
+2020-08-18 09:56:39.709 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:56:39.719 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:56:51.341 INFO  Immediate Retry is going to retry message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' because of an exception:
+System.Collections.Generic.KeyNotFoundException: The given key 'age' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at lambda_method(Closure , Dictionary`2 )
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:56:39
+	Handler failure time: 18/08/2020 6:56:51
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:56:51.419 INFO  Immediate Retry is going to retry message 'e5a0d9e9-0368-443e-8d77-ac1b00721d55' because of an exception:
+System.Collections.Generic.KeyNotFoundException: The given key 'age' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at lambda_method(Closure , Dictionary`2 )
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:56:39
+	Handler failure time: 18/08/2020 6:56:51
+	Message ID: e5a0d9e9-0368-443e-8d77-ac1b00721d55
+2020-08-18 09:56:51.433 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:56:51.442 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:56:57.218 INFO  Immediate Retry is going to retry message 'e5a0d9e9-0368-443e-8d77-ac1b00721d55' because of an exception:
+System.Collections.Generic.KeyNotFoundException: The given key 'age' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at lambda_method(Closure , Dictionary`2 )
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:56:51
+	Handler failure time: 18/08/2020 6:56:57
+	Message ID: e5a0d9e9-0368-443e-8d77-ac1b00721d55
+2020-08-18 09:56:57.282 INFO  Immediate Retry is going to retry message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' because of an exception:
+System.Collections.Generic.KeyNotFoundException: The given key 'age' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at lambda_method(Closure , Dictionary`2 )
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:56:51
+	Handler failure time: 18/08/2020 6:56:57
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:56:57.292 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:56:57.300 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:57:10.366 INFO  Immediate Retry is going to retry message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' because of an exception:
+System.Collections.Generic.KeyNotFoundException: The given key 'age' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at lambda_method(Closure , Dictionary`2 )
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:56:57
+	Handler failure time: 18/08/2020 6:57:10
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:57:10.366 WARN  Delayed Retry will reschedule message 'e5a0d9e9-0368-443e-8d77-ac1b00721d55' after a delay of 00:00:10 because of an exception:
+System.Collections.Generic.KeyNotFoundException: The given key 'age' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at lambda_method(Closure , Dictionary`2 )
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:56:57
+	Handler failure time: 18/08/2020 6:57:10
+	Message ID: e5a0d9e9-0368-443e-8d77-ac1b00721d55
+2020-08-18 09:57:10.391 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:57:14.166 WARN  Delayed Retry will reschedule message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' after a delay of 00:00:30 because of an exception:
+System.Collections.Generic.KeyNotFoundException: The given key 'age' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at lambda_method(Closure , Dictionary`2 )
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:57:10
+	Handler failure time: 18/08/2020 6:57:14
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:57:20.437 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:57:23.284 INFO  Immediate Retry is going to retry message 'e5a0d9e9-0368-443e-8d77-ac1b00721d55' because of an exception:
+System.Collections.Generic.KeyNotFoundException: The given key 'age' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at lambda_method(Closure , Dictionary`2 )
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:57:20
+	Handler failure time: 18/08/2020 6:57:23
+	Message ID: e5a0d9e9-0368-443e-8d77-ac1b00721d55
+2020-08-18 09:57:23.296 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:57:27.096 INFO  Immediate Retry is going to retry message 'e5a0d9e9-0368-443e-8d77-ac1b00721d55' because of an exception:
+System.Collections.Generic.KeyNotFoundException: The given key 'age' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at lambda_method(Closure , Dictionary`2 )
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:57:23
+	Handler failure time: 18/08/2020 6:57:26
+	Message ID: e5a0d9e9-0368-443e-8d77-ac1b00721d55
+2020-08-18 09:57:27.109 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:57:46.628 INFO  Logging to 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-18 09:57:46.832 INFO  Auditing processed messages to 'audit'
+2020-08-18 09:57:46.960 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-18 09:57:47.386 INFO  Executing 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-18 09:57:47.883 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:57:47.883 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:58:11.044 INFO  Immediate Retry is going to retry message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' because of an exception:
+System.Collections.Generic.KeyNotFoundException: The given key 'age' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at lambda_method(Closure , Dictionary`2 )
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending) in C:\Users\bhartman\Documents\LendingProject\LendingServices\LendingService.cs:line 94
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:57:47
+	Handler failure time: 18/08/2020 6:58:10
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 09:58:11.044 INFO  Immediate Retry is going to retry message 'e5a0d9e9-0368-443e-8d77-ac1b00721d55' because of an exception:
+System.Collections.Generic.KeyNotFoundException: The given key 'age' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at lambda_method(Closure , Dictionary`2 )
+   at Lending.Services.LendingService.CheckLendingPassible(Lending lending) in C:\Users\bhartman\Documents\LendingProject\LendingServices\LendingService.cs:line 94
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 19
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.InvokeAuditPipelineBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message type: Messages.Command.LendingArrived
+	Handler type: LendingsHandler.LendingArrivedHandler
+	Handler start time: 18/08/2020 6:57:47
+	Handler failure time: 18/08/2020 6:58:10
+	Message ID: e5a0d9e9-0368-443e-8d77-ac1b00721d55
+2020-08-18 09:58:11.082 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:58:11.087 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:59:53.263 INFO  Logging to 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-18 09:59:53.666 INFO  Auditing processed messages to 'audit'
+2020-08-18 09:59:53.931 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-18 09:59:54.898 INFO  Executing 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-18 09:59:55.902 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 09:59:55.902 INFO  Lending arrived to LendindArrivedHandler
+2020-08-18 10:04:10.832 WARN  'Lendings MessagePump' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-08-18 10:04:10.832 WARN  'Lendings Publish' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-08-18 10:04:10.840 WARN  The circuit breaker for 'Lendings MessagePump' is now in the armed state
+2020-08-18 10:04:10.840 INFO  Attempting to reconnect in 10 seconds.
+2020-08-18 10:04:26.007 INFO  Connection to the broker reestablished successfully.
+2020-08-18 10:04:26.047 INFO  Immediate Retry is going to retry message 'e5a0d9e9-0368-443e-8d77-ac1b00721d55' because of an exception:
+RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+   at RabbitMQ.Client.Framing.Impl.Connection.EnsureIsOpen()
+   at RabbitMQ.Client.Framing.Impl.Connection.CreateModel()
+   at NServiceBus.Transport.RabbitMQ.ConfirmsAwareChannel..ctor(IConnection connection, IRoutingTopology routingTopology) in /_/src/NServiceBus.Transport.RabbitMQ/Connection/ConfirmsAwareChannel.cs:line 15
+   at NServiceBus.Transport.RabbitMQ.ChannelProvider.GetPublishChannel() in /_/src/NServiceBus.Transport.RabbitMQ/Connection/ChannelProvider.cs:line 65
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, ContextBag context) in /_/src/NServiceBus.Transport.RabbitMQ/Sending/MessageDispatcher.cs:line 18
+   at NServiceBus.ImmediateDispatchTerminator.Terminate(IDispatchContext context)
+   at NServiceBus.Pipeline.PipelineTerminator`1.Invoke(T context, Func`2 next)
+   at (Closure`2 , IDispatchContext )
+   at NServiceBus.BatchToDispatchConnector.Invoke(IBatchDispatchContext context, Func`2 stage)
+   at (Closure`2 , IBatchDispatchContext )
+   at NServiceBus.ForceBatchDispatchToBeIsolatedBehavior.Invoke(IBatchDispatchContext context, Func`2 next)
+   at (Closure`2 , IBatchDispatchContext )
+   at NServiceBus.Pipeline`1.Invoke(TContext context)
+   at NServiceBus.PipelineInvocationExtensions.InvokePipeline[TContext](TContext context)
+   at NServiceBus.ForkExtensions.Fork[TFromContext,TToContext,TForkContext](IForkConnector`3 forkConnector, TForkContext context)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message ID: e5a0d9e9-0368-443e-8d77-ac1b00721d55
+2020-08-18 10:04:26.047 INFO  Immediate Retry is going to retry message 'ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3' because of an exception:
+RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+   at RabbitMQ.Client.Framing.Impl.Connection.EnsureIsOpen()
+   at RabbitMQ.Client.Framing.Impl.Connection.CreateModel()
+   at NServiceBus.Transport.RabbitMQ.ConfirmsAwareChannel..ctor(IConnection connection, IRoutingTopology routingTopology) in /_/src/NServiceBus.Transport.RabbitMQ/Connection/ConfirmsAwareChannel.cs:line 15
+   at NServiceBus.Transport.RabbitMQ.ChannelProvider.GetPublishChannel() in /_/src/NServiceBus.Transport.RabbitMQ/Connection/ChannelProvider.cs:line 65
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, ContextBag context) in /_/src/NServiceBus.Transport.RabbitMQ/Sending/MessageDispatcher.cs:line 18
+   at NServiceBus.ImmediateDispatchTerminator.Terminate(IDispatchContext context)
+   at NServiceBus.Pipeline.PipelineTerminator`1.Invoke(T context, Func`2 next)
+   at (Closure`2 , IDispatchContext )
+   at NServiceBus.BatchToDispatchConnector.Invoke(IBatchDispatchContext context, Func`2 stage)
+   at (Closure`2 , IBatchDispatchContext )
+   at NServiceBus.ForceBatchDispatchToBeIsolatedBehavior.Invoke(IBatchDispatchContext context, Func`2 next)
+   at (Closure`2 , IBatchDispatchContext )
+   at NServiceBus.Pipeline`1.Invoke(TContext context)
+   at NServiceBus.PipelineInvocationExtensions.InvokePipeline[TContext](TContext context)
+   at NServiceBus.ForkExtensions.Fork[TFromContext,TToContext,TForkContext](IForkConnector`3 forkConnector, TForkContext context)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 266
+Exception details:
+	Message ID: ae9dc1dd-e8d1-49c8-bd29-ac1b0071f2a3
+2020-08-18 10:04:26.064 INFO  The circuit breaker for 'Lendings MessagePump' is now disarmed
+2020-08-18 10:57:04.237 INFO  Logging to 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\' with level Info

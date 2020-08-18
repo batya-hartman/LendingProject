@@ -13,6 +13,6 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgNServiceBus Condition=" '$(PkgNServiceBus)' == '' ">C:\Users\bhartman\.nuget\packages\nservicebus\7.2.3</PkgNServiceBus>
+    <PkgNServiceBus Condition=" '$(PkgNServiceBus)' == '' ">C:\Users\bhartman\.nuget\packages\nservicebus\7.4.0</PkgNServiceBus>
   </PropertyGroup>
 </Project>

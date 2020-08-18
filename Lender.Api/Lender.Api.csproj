@@ -19,9 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CustomerRepository\Lender.Data.csproj" />
-    <ProjectReference Include="..\Lender.Data\Lendings.Data.csproj" />
     <ProjectReference Include="..\Lender.Service\Lender.Service.csproj" />
-    <ProjectReference Include="..\LendingServices\Lending.Services.csproj" />
   </ItemGroup>
 
 

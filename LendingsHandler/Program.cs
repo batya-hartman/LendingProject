@@ -50,14 +50,7 @@ namespace LendingsHandler
             containerSettings.ServiceCollection.AddDbContext<LendingContext>(options =>
                         options.UseSqlServer(connection));
 
-            //var mappingConfig = new MapperConfiguration(mc =>
-            //{
-            //    mc.AddProfile(new MappingProfile());
-            //});
-            
-            // IMapper mapper = mappingConfig.CreateMapper();
-            //  containerSettings.ServiceCollection.AddSingleton(mapper);
-
+           
             var endpointInstance = await Endpoint.Start(endpointConfiguration)
                 .ConfigureAwait(false);
             

@@ -4,6 +4,6 @@ C:\Users\bhartman\Documents\LendingProject\LendingServices\bin\Debug\netstandard
 C:\Users\bhartman\Documents\LendingProject\LendingServices\obj\Debug\netstandard2.0\Lending.Services.csprojAssemblyReference.cache
 C:\Users\bhartman\Documents\LendingProject\LendingServices\obj\Debug\netstandard2.0\Lending.Services.AssemblyInfoInputs.cache
 C:\Users\bhartman\Documents\LendingProject\LendingServices\obj\Debug\netstandard2.0\Lending.Services.AssemblyInfo.cs
-C:\Users\bhartman\Documents\LendingProject\LendingServices\obj\Debug\netstandard2.0\Lending.Services.csproj.CoreCompileInputs.cache
 C:\Users\bhartman\Documents\LendingProject\LendingServices\obj\Debug\netstandard2.0\Lending.Services.dll
 C:\Users\bhartman\Documents\LendingProject\LendingServices\obj\Debug\netstandard2.0\Lending.Services.pdb
+C:\Users\bhartman\Documents\LendingProject\LendingServices\obj\Debug\netstandard2.0\Lending.Services.csproj.CoreCompileInputs.cache

@@ -102,7 +102,6 @@ C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3
 C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
 C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\Lending.Services.dll
@@ -172,3 +171,5 @@ C:\Users\bhartman\Documents\LendingProject\LendingsHandler\obj\Debug\netcoreapp3
 C:\Users\bhartman\Documents\LendingProject\LendingsHandler\obj\Debug\netcoreapp3.1\LendingsHandler.csproj.CopyComplete
 C:\Users\bhartman\Documents\LendingProject\LendingsHandler\obj\Debug\netcoreapp3.1\LendingsHandler.genruntimeconfig.cache
 C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\LendingsHandler.dll.config
+C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\System.Reflection.Metadata.dll
+C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll

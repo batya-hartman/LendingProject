@@ -10,5 +10,6 @@ namespace Lender.Service.Models
         public Guid LenderId { get; set; }
         [Required]
         public Dictionary<string, object> Parameters { get; set; }
+        public string PrincipalSignature { get; set; }
     }
 }

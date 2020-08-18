@@ -3031,30 +3031,6 @@
           "bin/placeholder/Lender.Service.dll": {}
         }
       },
-      "Lending.Services/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/Lending.Services.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Lending.Services.dll": {}
-        }
-      },
-      "Lendings.Data/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Lending.Services": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "3.1.7"
-        },
-        "compile": {
-          "bin/placeholder/Lendings.Data.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Lendings.Data.dll": {}
-        }
-      },
       "Messages/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -9740,16 +9716,6 @@
       "path": "../Lender.Service/Lender.Service.csproj",
       "msbuildProject": "../Lender.Service/Lender.Service.csproj"
     },
-    "Lending.Services/1.0.0": {
-      "type": "project",
-      "path": "../LendingServices/Lending.Services.csproj",
-      "msbuildProject": "../LendingServices/Lending.Services.csproj"
-    },
-    "Lendings.Data/1.0.0": {
-      "type": "project",
-      "path": "../Lender.Data/Lendings.Data.csproj",
-      "msbuildProject": "../Lender.Data/Lendings.Data.csproj"
-    },
     "Messages/1.0.0": {
       "type": "project",
       "path": "../Messages/Messages.csproj",
@@ -9760,8 +9726,6 @@
     ".NETCoreApp,Version=v3.1": [
       "Lender.Data >= 1.0.0",
       "Lender.Service >= 1.0.0",
-      "Lending.Services >= 1.0.0",
-      "Lendings.Data >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.7",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.4",
       "NServiceBus >= 7.4.0",
@@ -9800,14 +9764,8 @@
             "C:\\Users\\bhartman\\Documents\\LendingProject\\CustomerRepository\\Lender.Data.csproj": {
               "projectPath": "C:\\Users\\bhartman\\Documents\\LendingProject\\CustomerRepository\\Lender.Data.csproj"
             },
-            "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Data\\Lendings.Data.csproj": {
-              "projectPath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Data\\Lendings.Data.csproj"
-            },
             "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Service\\Lender.Service.csproj": {
               "projectPath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lender.Service\\Lender.Service.csproj"
-            },
-            "C:\\Users\\bhartman\\Documents\\LendingProject\\LendingServices\\Lending.Services.csproj": {
-              "projectPath": "C:\\Users\\bhartman\\Documents\\LendingProject\\LendingServices\\Lending.Services.csproj"
             }
           }
         }
