@@ -11,6 +11,6 @@ namespace Lending.Services.Models
         public string Operand { get; set; }
         public virtual Lender Lender { get; set; }
         public string LogicalOperator { get; set; }
-       // public Type Type {get; set; }
+        public string Type { get; set; }
     }    
 }

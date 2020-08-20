@@ -1,9 +1,7 @@
 ﻿using Lender.Service;
-using Lender.Service.Models;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Lender.Api.Controllers
 {
@@ -16,11 +14,23 @@ namespace Lender.Api.Controllers
         {
             _lenderService = ilenderService;
         }
-       
+
         [HttpPut]
         public Task<bool> AddLender(Service.Models.Lender lender)
         {
-            return _lenderService.AddLender(lender);
+            if (String.IsNullOrEmpty(lender.Name))
+            {
+                throw new Exception("Name can't be null or empty");
+            }
+            var res= _lenderService.AddLenderAsync(lender);
+            return res;
+        }
+        [HttpPost]
+        public Task<bool> EditLenderRules(Service.Models.Lender lender)
+        {
+            if (lender.LenderId == Guid.Empty)
+            throw new Exception("LenderId can't be empty");
+            return _lenderService.EditLenderAsync(lender);
         }
     }
 }

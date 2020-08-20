@@ -1,8 +1,7 @@
 ﻿using Lending.Services.Models;
-using Messages.Command;
-using NServiceBus;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
@@ -38,41 +37,25 @@ namespace Lending.Services
         private async Task<BinaryExpression> BuildLenderExpression(Models.Lending lending, ParameterExpression parameters)
         {
             Lender lender = await _lendingRepository.GetLenderAsync(lending.LenderId);
-            if (lender.Rules != null)
+            if (!String.IsNullOrEmpty(lending.PrincipalSignature))
             {
-                if (!String.IsNullOrEmpty(lending.PrincipalSignature))
-                {
-                    lender.Rules.RemoveAll(rule => rule.Description == lending.PrincipalSignature);
-                }
-                var holeExpression = GenarateExpressionFromRules(lender.Rules, parameters);
-                return holeExpression;
+                lender.Rules.RemoveAll(rule => lending.PrincipalSignature.Contains(rule.Description));
             }
-            return null;
+            if (lender.Rules.Count < 1)
+            {
+                return null;
+            }
+            var wholeExpression = GenarateExpressionFromRules(lender.Rules, parameters);
+            return wholeExpression;
         }
         private BinaryExpression GenarateExpressionFromRules(List<Rule> rules, ParameterExpression parameters)
         {
-            BinaryExpression expression;
-            ConstantExpression operand;
-
             var parameter = Expression.Property(parameters, "Item", Expression.Constant(rules[0].Description));
-            UnaryExpression kindParam;
-
-            if (double.TryParse(rules[0].Operand, out _))
-            {
-                kindParam = Expression.Convert(parameter, typeof(double));
-                operand = Expression.Constant(double.Parse(rules[0].Operand), typeof(double));
-            }
-            else if (bool.TryParse(rules[0].Operand, out _))
-            {
-                kindParam = Expression.Convert(parameter, typeof(bool));
-                operand = Expression.Constant(bool.Parse(rules[0].Operand), typeof(bool));
-            }
-            else
-            {
-                kindParam = Expression.Convert(parameter, typeof(string));
-                operand = Expression.Constant(rules[0].Operand, typeof(string));
-            }
-            expression = OperotorsDictionary[rules[0].ComparisonOperator](kindParam, operand);
+            Type type = Type.GetType(rules[0].Type.Replace(" ", ""));
+            var kindParam = Expression.Convert(parameter, type);
+            TypeConverter typeConverter = TypeDescriptor.GetConverter(type);
+            ConstantExpression operand = Expression.Constant(typeConverter.ConvertFromString(rules[0].Operand), type);
+            BinaryExpression expression = OperotorsDictionary[rules[0].ComparisonOperator](kindParam, operand);
 
             if (rules.Count == 1)
             {
@@ -84,7 +67,7 @@ namespace Lending.Services
                 return OperotorsDictionary[rules[0].LogicalOperator](expression, GenarateExpressionFromRules(rules, parameters));
             }
         }
-        public async Task<bool> CheckLendingPassible(Models.Lending lending)
+        public async Task<bool> CheckLendingPassibleAsync(Models.Lending lending)
         {
             try
             {
@@ -93,16 +76,15 @@ namespace Lending.Services
                 Expression<Func<Dictionary<string, object>, bool>> le = Expression.Lambda<Func<Dictionary<string, object>, bool>>(expression, parameters);
                 Func<Dictionary<string, object>, bool> compiled = le.Compile();
                 var res = compiled(lending.Parameters);
-                return res;
+                bool success = await _lendingRepository.AddLendingToDBAsync(lending, res);
+                return res && success;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
-                throw e;
+                throw;
             }
 
         }
-       
     }
-    
 }

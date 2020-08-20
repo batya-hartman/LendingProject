@@ -7,6 +7,7 @@ namespace Lender.Service
 {
     public interface ILenderService
     {
-        Task<bool> AddLender(Models.Lender Lender);
+        Task<bool> AddLenderAsync(Models.Lender Lender);
+        Task<bool> EditLenderAsync(Models.Lender lender);
     }
 }

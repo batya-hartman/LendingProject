@@ -1,0 +1,54 @@
+﻿2020-08-20 09:46:41.670 INFO  Logging to 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-20 09:46:42.028 INFO  Auditing processed messages to 'audit'
+2020-08-20 09:46:42.207 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-20 09:46:43.402 INFO  Executing 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-20 09:46:44.222 INFO  Lending arrived to LendindArrivedHandler
+2020-08-20 09:49:20.831 INFO  Logging to 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-20 09:49:21.188 INFO  Auditing processed messages to 'audit'
+2020-08-20 09:49:21.393 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-20 09:49:22.189 INFO  Executing 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-20 09:49:23.075 INFO  Lending arrived to LendindArrivedHandler
+2020-08-20 09:50:17.291 INFO  Checked if the lending is ok, the result is True
+2020-08-20 10:07:26.685 INFO  Logging to 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-20 10:07:27.064 INFO  Auditing processed messages to 'audit'
+2020-08-20 10:07:27.349 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-20 10:07:28.273 INFO  Executing 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-20 10:16:13.561 INFO  Logging to 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-20 10:16:14.005 INFO  Auditing processed messages to 'audit'
+2020-08-20 10:16:14.225 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-20 10:16:14.981 INFO  Executing 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-20 10:24:17.969 INFO  Logging to 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\' with level Info
+2020-08-20 10:24:18.357 INFO  Auditing processed messages to 'audit'
+2020-08-20 10:24:18.526 INFO  Selected active license from C:\Users\bhartman\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-08-20 10:24:19.181 INFO  Executing 'C:\Users\bhartman\Documents\LendingProject\LendingsHandler\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-08-20 10:30:23.527 WARN  'Lendings Publish' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-08-20 10:30:23.527 WARN  'Lendings MessagePump' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2020-08-20 10:30:23.539 INFO  Attempting to reconnect in 10 seconds.
+2020-08-20 10:30:23.547 WARN  The circuit breaker for 'Lendings MessagePump' is now in the armed state
+2020-08-20 10:30:33.586 INFO  Connection to the broker reestablished successfully.
+2020-08-20 10:30:33.617 INFO  The circuit breaker for 'Lendings MessagePump' is now disarmed

@@ -4,6 +4,6 @@ namespace Lending.Services
 {
     public interface ILendingService
     {
-        Task<bool> CheckLendingPassible(Models.Lending lending);
+        Task<bool> CheckLendingPassibleAsync(Models.Lending lending);
     }
 }

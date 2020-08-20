@@ -1,13 +1,12 @@
-﻿using AutoMapper;
-using Lending.Services;
+﻿using Lending.Services;
 using Lendings.Data;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using NServiceBus;
 using System;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 
 
 
@@ -44,16 +43,14 @@ namespace LendingsHandler
             conventions.DefiningEventsAs(type => type.Namespace == "Messages.Events");
 
             var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());
+            containerSettings.ServiceCollection.AddScoped<ILendingRepository, LendingRepository>();
+            containerSettings.ServiceCollection.AddScoped<ILendingService, LendingService>();
+            containerSettings.ServiceCollection.AddDbContext<LendingContext>(options =>
+                       options.UseSqlServer(connection));
 
-             containerSettings.ServiceCollection.AddScoped<ILendingRepository, LendingRepository>();
-             containerSettings.ServiceCollection.AddScoped<ILendingService, LendingService>();
-             containerSettings.ServiceCollection.AddDbContext<LendingContext>(options =>
-                        options.UseSqlServer(connection));
-
-           
             var endpointInstance = await Endpoint.Start(endpointConfiguration)
                 .ConfigureAwait(false);
-            
+
             Console.WriteLine("Press Enter to exit.");
             Console.ReadLine();
 

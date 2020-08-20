@@ -1,22 +1,12 @@
-﻿using Lending.Services.Models;
-using Microsoft.EntityFrameworkCore;
-using System.Configuration;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace Lendings.Data
 {
     public class LendingContext : DbContext
     {
-        public DbSet<Lender> Lenders { get; set; }
-        public DbSet<Rule> Rules { get; set; }
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    //if (!optionsBuilder.IsConfigured)
-        //    //{
-                 
-        //        optionsBuilder.UseSqlServer(ConfigurationManager.AppSettings["LendingConnection"]);
-        //        base.OnConfiguring(optionsBuilder);
-        //   // }
-        //}
+        public DbSet<Lending.Services.Models.Lender> Lenders { get; set; }
+        public DbSet<Lending.Services.Models.Rule> Rules { get; set; }
+        public DbSet<LendingEntity> LendingEntities { get; set; }
         public LendingContext(DbContextOptions<LendingContext> options)
    : base(options)
         { }

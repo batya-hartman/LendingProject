@@ -20,7 +20,7 @@ C:\Users\bhartman\Documents\LendingProject\CustomerRepository\bin\Debug\netstand
 C:\Users\bhartman\Documents\LendingProject\CustomerRepository\obj\Debug\netstandard2.0\Lender.Data.csprojAssemblyReference.cache
 C:\Users\bhartman\Documents\LendingProject\CustomerRepository\obj\Debug\netstandard2.0\Lender.Data.AssemblyInfoInputs.cache
 C:\Users\bhartman\Documents\LendingProject\CustomerRepository\obj\Debug\netstandard2.0\Lender.Data.AssemblyInfo.cs
-C:\Users\bhartman\Documents\LendingProject\CustomerRepository\obj\Debug\netstandard2.0\Lender.Data.csproj.CoreCompileInputs.cache
 C:\Users\bhartman\Documents\LendingProject\CustomerRepository\obj\Debug\netstandard2.0\Lender.Data.csproj.CopyComplete
 C:\Users\bhartman\Documents\LendingProject\CustomerRepository\obj\Debug\netstandard2.0\Lender.Data.dll
 C:\Users\bhartman\Documents\LendingProject\CustomerRepository\obj\Debug\netstandard2.0\Lender.Data.pdb
+C:\Users\bhartman\Documents\LendingProject\CustomerRepository\obj\Debug\netstandard2.0\Lender.Data.csproj.CoreCompileInputs.cache

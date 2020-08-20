@@ -19,7 +19,7 @@ namespace LendingsHandler
         public Task Handle(LendingArrived message, IMessageHandlerContext context)
         {
             _log.Info("Lending arrived to LendindArrivedHandler");
-            var res= _lendingService.CheckLendingPassible(MapToLendingModel(message));
+            var res= _lendingService.CheckLendingPassibleAsync(MapToLendingModel(message));
             _log.Info($"Checked if the lending is ok, the result is {res.Result}");
             return res;
         }

@@ -23,11 +23,22 @@ namespace Lender.Service
           //  _messageSession = imessageSession;
         }
 
-        public Task<bool> AddLender(Models.Lender lender)
+        public async Task<bool> AddLenderAsync(Models.Lender lender)
         {
-            using (var stream = File.Open(lender.PathToExcelFile, FileMode.Open, FileAccess.Read))
+            lender.RulesList= ReadFromExcel(lender.PathToExcelFile);
+            return await _LenderRepository.AddLenderAsync(lender);
+        }
+        public async Task<bool> EditLenderAsync(Models.Lender lender)
+        {
+            lender.RulesList = ReadFromExcel(lender.PathToExcelFile);
+            return await _LenderRepository.EditLenderRulesAsync(lender);
+        }
+        private List<Rule> ReadFromExcel(string pathToExcelFile)
+        { 
+            var rulesList = new List<Rule>();
+            using (var stream = File.Open(pathToExcelFile, FileMode.Open, FileAccess.Read))
             {
-                lender.RulesList = new List<Rule>();
+               
                 System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
                 using (var reader = ExcelReaderFactory.CreateReader(stream))
                 {
@@ -42,13 +53,24 @@ namespace Lender.Service
                             Operand = dataTable.Rows[i][2].ToString(),
                             LogicalOperator = dataTable.Rows[i][3].ToString()
                         };
-                        lender.RulesList.Add(rule);
+                        rule.Type = AddTypeToRule(rule.Operand);
+                        rulesList.Add(rule);
                     }
                 }
             }
-            return _LenderRepository.AddLenderAsync(lender);
+            return rulesList;
         }
-      
+
+        private string AddTypeToRule(string operand)
+        {
+            if (double.TryParse(operand, out _))
+                return "System.Double";
+            if (bool.TryParse(operand, out _))
+                return "System.boolean";
+            if (DateTime.TryParse(operand, out _))
+                return "System.DateTime";
+            return "System.String";
+        }
     }
 }
 

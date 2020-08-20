@@ -19,8 +19,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lender.Service", "Lender.Se
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lender.Data", "CustomerRepository\Lender.Data.csproj", "{338063FD-606C-45A1-A7A5-4D9950644575}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rules.Handler", "Lender.Handler\Rules.Handler.csproj", "{EC0C3EC9-A800-448B-88AC-7730890AD630}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lender.Api", "Lender.Api\Lender.Api.csproj", "{A958170B-CEF8-4034-B1E0-F310E11701B6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lending.Api", "Lending.Api\Lending.Api.csproj", "{673923C7-9131-4446-997E-C8046DB83940}"
@@ -55,10 +53,6 @@ Global
 		{338063FD-606C-45A1-A7A5-4D9950644575}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{338063FD-606C-45A1-A7A5-4D9950644575}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{338063FD-606C-45A1-A7A5-4D9950644575}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EC0C3EC9-A800-448B-88AC-7730890AD630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC0C3EC9-A800-448B-88AC-7730890AD630}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC0C3EC9-A800-448B-88AC-7730890AD630}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC0C3EC9-A800-448B-88AC-7730890AD630}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A958170B-CEF8-4034-B1E0-F310E11701B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A958170B-CEF8-4034-B1E0-F310E11701B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A958170B-CEF8-4034-B1E0-F310E11701B6}.Release|Any CPU.ActiveCfg = Release|Any CPU

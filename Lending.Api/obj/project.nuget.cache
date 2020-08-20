@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SebkCaR6DzYm3lpFe/yxw/Rb7DpF1wcuEqkUTbrwAugyrXq4fzZOuOCzEwWZqAxJo9n4JGqPTY1XS4YUTr5x3w==",
+  "dgSpecHash": "e7LabA/2f17Fxkgyw2dsqCXYTHNOEGf+9TJzusLCwS4GUv16k6lTN71rGinWqKSZ5KShJxOLVnc5oE4ir1Indg==",
   "success": true,
   "projectFilePath": "C:\\Users\\bhartman\\Documents\\LendingProject\\Lending.Api\\Lending.Api.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\bhartman\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.7\\microsoft.entityframeworkcore.design.3.1.7.nupkg.sha512",
     "C:\\Users\\bhartman\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.7\\microsoft.entityframeworkcore.relational.3.1.7.nupkg.sha512",
     "C:\\Users\\bhartman\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.7\\microsoft.entityframeworkcore.sqlserver.3.1.7.nupkg.sha512",
+    "C:\\Users\\bhartman\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.7\\microsoft.entityframeworkcore.tools.3.1.7.nupkg.sha512",
     "C:\\Users\\bhartman\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.7\\microsoft.extensions.caching.abstractions.3.1.7.nupkg.sha512",
     "C:\\Users\\bhartman\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.7\\microsoft.extensions.caching.memory.3.1.7.nupkg.sha512",
     "C:\\Users\\bhartman\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.7\\microsoft.extensions.configuration.3.1.7.nupkg.sha512",
