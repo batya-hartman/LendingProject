@@ -6,7 +6,6 @@ namespace Lender.Service.Models
 {
     public class Lender
     {
-        [Required]
         public Guid LenderId { get; set; }
         [Required]
         public string Name { get; set; }

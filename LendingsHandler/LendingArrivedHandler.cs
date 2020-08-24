@@ -19,7 +19,7 @@ namespace LendingsHandler
         public Task Handle(LendingArrived message, IMessageHandlerContext context)
         {
             _log.Info("Lending arrived to LendindArrivedHandler");
-            var res= _lendingService.CheckLendingPassibleAsync(MapToLendingModel(message));
+            var res = _lendingService.CheckLendingPassibleAsync(MapToLendingModel(message));
             _log.Info($"Checked if the lending is ok, the result is {res.Result}");
             return res;
         }
@@ -31,7 +31,6 @@ namespace LendingsHandler
                 PrincipalSignature = lending.PrincipalSignature,
                 Parameters = new Dictionary<string, object>()
             };
-
             foreach (var item in lending.BoolParameters)
             {
                 lending1.Parameters.Add(item.Key, item.Value);

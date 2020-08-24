@@ -22,7 +22,7 @@ namespace Lender.Api.Controllers
             {
                 throw new Exception("Name can't be null or empty");
             }
-            var res= _lenderService.AddLenderAsync(lender);
+            var res = _lenderService.AddLenderAsync(lender);
             return res;
         }
         [HttpPost]

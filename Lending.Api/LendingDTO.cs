@@ -9,7 +9,7 @@ namespace Lending.Api
         [Required]
         public Guid LenderId { get; set; }
         public Dictionary<string, string> StringParameters { get; set; }
-        public Dictionary<string, double> doubleParameters { get; set; }
+        public Dictionary<string, double> DoubleParameters { get; set; }
         public Dictionary<string, bool> BoolParameters { get; set; }
         public string PrincipalSignature { get; set; }
     }

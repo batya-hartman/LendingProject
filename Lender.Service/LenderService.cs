@@ -13,10 +13,8 @@ namespace Lender.Service
     public class LenderService : ILenderService
     {
         private readonly ILenderRepository _LenderRepository;
-    //    private readonly IMessageSession _messageSession;
 
         public LenderService(ILenderRepository LenderRepository
-            //, IMessageSession imessageSession
             )
         {
             _LenderRepository = LenderRepository;
@@ -25,7 +23,7 @@ namespace Lender.Service
 
         public async Task<bool> AddLenderAsync(Models.Lender lender)
         {
-            lender.RulesList= ReadFromExcel(lender.PathToExcelFile);
+            lender.RulesList = ReadFromExcel(lender.PathToExcelFile);
             return await _LenderRepository.AddLenderAsync(lender);
         }
         public async Task<bool> EditLenderAsync(Models.Lender lender)
@@ -60,13 +58,12 @@ namespace Lender.Service
             }
             return rulesList;
         }
-
         private string AddTypeToRule(string operand)
         {
             if (double.TryParse(operand, out _))
                 return "System.Double";
             if (bool.TryParse(operand, out _))
-                return "System.boolean";
+                return "System.Boolean";
             if (DateTime.TryParse(operand, out _))
                 return "System.DateTime";
             return "System.String";

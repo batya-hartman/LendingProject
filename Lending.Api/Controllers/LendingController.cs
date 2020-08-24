@@ -24,7 +24,7 @@ namespace Lending.Api.Controllers
         [HttpPost("NSB")]
         public async Task<bool> checkLendingPossibleWithNSBAsync(LendingDTO lending)
         {
-            if (lending.StringParameters.Count + lending.doubleParameters.Count + lending.BoolParameters.Count == 0)
+            if (lending.StringParameters.Count + lending.DoubleParameters.Count + lending.BoolParameters.Count == 0)
             {
                 throw new System.Exception("No parameters were provided");
             }
@@ -33,7 +33,7 @@ namespace Lending.Api.Controllers
                 LenderId = lending.LenderId,
                 PrincipalSignature = lending.PrincipalSignature,
                 BoolParameters = lending.BoolParameters,
-                doubleParameters = lending.doubleParameters,
+                doubleParameters = lending.DoubleParameters,
                 StringParameters = lending.StringParameters
             };
             await _messageSession.Send(lendingArrived);
@@ -58,7 +58,7 @@ namespace Lending.Api.Controllers
             {
                 lendingModel.Parameters.Add(item.Key, item.Value);
             }
-            foreach (var item in lending.doubleParameters)
+            foreach (var item in lending.DoubleParameters)
             {
                 lendingModel.Parameters.Add(item.Key, item.Value);
             }

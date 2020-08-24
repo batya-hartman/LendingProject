@@ -27,10 +27,10 @@ namespace Lender.Data
             return await _lenderContext.SaveChangesAsync() > 0;
         }
 
-    public async Task<bool> EditLenderRulesAsync(Service.Models.Lender lender)
-    {
-        var oldLender = await GetLenderAsync(lender.LenderId);
-        lender.RulesList.ForEach(rule => rule.LenderId = lender.LenderId);
+        public async Task<bool> EditLenderRulesAsync(Service.Models.Lender lender)
+        {
+            var oldLender = await GetLenderAsync(lender.LenderId);
+            lender.RulesList.ForEach(rule => rule.LenderId = lender.LenderId);
 
             foreach (var rule in lender.RulesList)
             {
@@ -39,18 +39,18 @@ namespace Lender.Data
                 {
                     _lenderContext.Rules.Remove(exist);
                 }
-                
-                    _lenderContext.Rules.Add(rule);
+
+                _lenderContext.Rules.Add(rule);
             }
             return await _lenderContext.SaveChangesAsync() > 0;
-    }
+        }
 
-    public async Task<Service.Models.Lender> GetLenderAsync(Guid lenderId)
-    {
-        var res = await _lenderContext.Lenders.FirstOrDefaultAsync(l => l.LenderId == lenderId);
+        public async Task<Service.Models.Lender> GetLenderAsync(Guid lenderId)
+        {
+            var res = await _lenderContext.Lenders.FirstOrDefaultAsync(l => l.LenderId == lenderId);
             res.RulesList = new List<Rule>();
             res.RulesList.AddRange(_lenderContext.Rules.Where(r => r.LenderId == lenderId));
             return res;
+        }
     }
-}
 }

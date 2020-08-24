@@ -2,6 +2,7 @@
 using Lending.Services.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Lendings.Data
@@ -21,7 +22,7 @@ namespace Lendings.Data
                 LenderId = lending.LenderId,
                 PrincipalSignature = lending.PrincipalSignature,
                 Confirmed = succeeded,
-                Parameters = new System.Collections.Generic.List<Parameter>()
+                Parameters = new List<Parameter>()
             };
             foreach (var item in lending.Parameters)
             {

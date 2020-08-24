@@ -22,7 +22,6 @@ namespace Lending.Services
         }
         private void initDictionary()
         {
-
             OperotorsDictionary.Add(">", (a, b) => Expression.GreaterThan(a, b));
             OperotorsDictionary.Add("<", (a, b) => Expression.LessThan(a, b));
             OperotorsDictionary.Add(">=", (a, b) => Expression.GreaterThanOrEqual(a, b));
@@ -37,54 +36,50 @@ namespace Lending.Services
         private async Task<BinaryExpression> BuildLenderExpression(Models.Lending lending, ParameterExpression parameters)
         {
             Lender lender = await _lendingRepository.GetLenderAsync(lending.LenderId);
+            List<Rule> copyRules = new List<Rule>();
+            copyRules.AddRange(lender.Rules);
             if (!String.IsNullOrEmpty(lending.PrincipalSignature))
             {
-                lender.Rules.RemoveAll(rule => lending.PrincipalSignature.Contains(rule.Description));
+               copyRules.RemoveAll(rule => lending.PrincipalSignature.Contains(rule.Description));
             }
-            if (lender.Rules.Count < 1)
+            if (copyRules.Count < 1)
             {
                 return null;
             }
-            var wholeExpression = GenarateExpressionFromRules(lender.Rules, parameters);
+            
+            var wholeExpression = GenarateExpressionFromRules(copyRules, parameters);
             return wholeExpression;
         }
         private BinaryExpression GenarateExpressionFromRules(List<Rule> rules, ParameterExpression parameters)
         {
-            var parameter = Expression.Property(parameters, "Item", Expression.Constant(rules[0].Description));
+            IndexExpression parameter = Expression.Property(parameters, "Item", Expression.Constant(rules[0].Description));
             Type type = Type.GetType(rules[0].Type.Replace(" ", ""));
-            var kindParam = Expression.Convert(parameter, type);
-            TypeConverter typeConverter = TypeDescriptor.GetConverter(type);
-            ConstantExpression operand = Expression.Constant(typeConverter.ConvertFromString(rules[0].Operand), type);
-            BinaryExpression expression = OperotorsDictionary[rules[0].ComparisonOperator](kindParam, operand);
+            UnaryExpression TypeConvertedParam = Expression.Convert(parameter, type);
+            TypeConverter converter = TypeDescriptor.GetConverter(type);
+            ConstantExpression operand = Expression.Constant(converter.ConvertFromString(rules[0].Operand), type);
+            BinaryExpression expression = OperotorsDictionary[rules[0].ComparisonOperator](TypeConvertedParam, operand);
 
             if (rules.Count == 1)
             {
-                return expression;
+                return expression; 
             }
             else
             {
+                Rule rule = rules[0];
                 rules.RemoveAt(0);
-                return OperotorsDictionary[rules[0].LogicalOperator](expression, GenarateExpressionFromRules(rules, parameters));
+                //Take delgate from the OperotorsDictionary - AndAlso / OrElse (according the LogicalOperator - and/or of the rule).
+                return OperotorsDictionary[rule.LogicalOperator](expression, GenarateExpressionFromRules(rules, parameters));
             }
         }
         public async Task<bool> CheckLendingPassibleAsync(Models.Lending lending)
         {
-            try
-            {
-                var parameters = Expression.Parameter(typeof(Dictionary<string, object>), "parameters");
-                var expression = await BuildLenderExpression(lending, parameters);
-                Expression<Func<Dictionary<string, object>, bool>> le = Expression.Lambda<Func<Dictionary<string, object>, bool>>(expression, parameters);
-                Func<Dictionary<string, object>, bool> compiled = le.Compile();
-                var res = compiled(lending.Parameters);
-                bool success = await _lendingRepository.AddLendingToDBAsync(lending, res);
-                return res && success;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-                throw;
-            }
-
+            var parameters = Expression.Parameter(typeof(Dictionary<string, object>), "parameters");
+            var expression = await BuildLenderExpression(lending, parameters);
+            Expression<Func<Dictionary<string, object>, bool>> le = Expression.Lambda<Func<Dictionary<string, object>, bool>>(expression, parameters);
+            Func<Dictionary<string, object>, bool> compiled = le.Compile();
+            var res = compiled(lending.Parameters);
+            bool success = await _lendingRepository.AddLendingToDBAsync(lending, res);
+            return res && success;
         }
     }
 }
